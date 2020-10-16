@@ -1,0 +1,53 @@
+# 16 September 2020
+# Purpose of this code is to count the number of genes on each chromosome
+
+grep chr0001g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 3959
+
+grep chr0002g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 3853
+
+grep chr0003g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 2219
+
+grep chr0004g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 2388
+
+grep chr0005g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 2111
+
+grep chr0006g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 5867
+
+grep chr0007g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 3438
+
+grep chr0008g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 2799
+
+grep chr0009g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 2391
+
+grep chr0010g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 4078
+
+grep chr0011g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 2035
+
+grep chr0012g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 3425
+
+grep chr0013g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 4214
+
+grep chr0014g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 1172
+
+grep chr0015g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 396
+
+grep chr0016g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 138
+
+grep chr0445g[0-9].*1$ /home/jkimball/shared/WR_Annotation/NCBI_submission/annotation_mapping_table_NCBI.txt | wc -l
+# 7

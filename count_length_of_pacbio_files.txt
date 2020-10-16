@@ -1,0 +1,37 @@
+# 20 August 2020
+# WD: /home/jkimball/shared/PacBio_FilesJenny
+# This code is to count the length (in bp) of each of the PacBio sequencing files from Dovetail Genomics
+
+zcat DTG-DNA-358_cell1.fastq.gz | grep -v ">" | wc | awk '{print $3-$1}'
+# Output: 16533301783
+# Human-readable: 16,533,301,783
+
+zcat DTG-DNA-358_cell2.fastq.gz | grep -v ">" | wc | awk '{print $3-$1}'
+# Output: 17597330193
+# Human-readable: 17,597,330,193
+
+zcat DTG-DNA-358_cell3.fastq.gz | grep -v ">" | wc | awk '{print $3-$1}'
+# Output: 17791432341
+# Human-readable: 17,791,432,341
+
+zcat DTG-DNA-358_cell4.fastq.gz | grep -v ">" | wc | awk '{print $3-$1}'
+# Output: 17221412257
+# Human-readable: 17,221,412,257
+
+zcat DTG-DNA-358_cell5.fastq.gz | grep -v ">" | wc | awk '{print $3-$1}'
+# Output: 16364297391
+# Human-readable: 16,364,297,391
+
+zcat DTG-DNA-358_cell6.fastq.gz | grep -v ">" | wc | awk '{print $3-$1}'
+# Output: 18431470325
+# Human-readable: 18,431,470,325
+
+zcat DTG-DNA-358_cell7.fastq.gz | grep -v ">" | wc | awk '{print $3-$1}'
+# Output: 17539143743
+# Human-readable: 17,539,143,743
+
+zcat DTG-DNA-358_cell8.fastq.gz | grep -v ">" | wc | awk '{print $3-$1}'
+# Output: 16566456105
+# Human-readable: 16,566,456,105
+
+# SUM: 138,044,844,138

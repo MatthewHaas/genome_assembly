@@ -1,0 +1,31 @@
+# 15 September 2020
+# WD: /home/jkimball/shared/PacBio_FilesJenny
+# This code used to count the number of reads in each FASTQ file produced by PacBio
+# Counts the number of occurrences of the "@" character signifying the header of each read
+# Since reads are of variable length, I didn't think it made sense to count the # of lines of the total # of lines and divide by the length of each read.
+
+# Total = 7,023,180 reads from 8 SMRT cells
+
+zcat DTG-DNA-358_cell1.fastq.gz | fgrep -o @ | wc -l
+# 916742 reads in cell 1
+
+zcat DTG-DNA-358_cell2.fastq.gz | fgrep -o @ | wc -l
+# 848662 reads in cell 2
+
+zcat DTG-DNA-358_cell3.fastq.gz | fgrep -o @ | wc -l
+# 861030 reads in cell 3
+
+zcat DTG-DNA-358_cell4.fastq.gz | fgrep -o @ | wc -l
+# 878977 reads in cell 4
+
+zcat DTG-DNA-358_cell5.fastq.gz | fgrep -o @ | wc -l
+# 786607 reads in cell 5
+
+zcat DTG-DNA-358_cell6.fastq.gz | fgrep -o @ | wc -l
+# 978399 reads in cell 6
+
+zcat DTG-DNA-358_cell7.fastq.gz | fgrep -o @ | wc -l
+# 956577 reads in cell 7
+
+zcat DTG-DNA-358_cell8.fastq.gz | fgrep -o @ | wc -l
+# 856464 reads in cell 8
