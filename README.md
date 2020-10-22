@@ -13,3 +13,6 @@ This script was originally written by Haibao Tang (https://github.com/tanghaibao
 
 ## make_duplication_bed_files.py
 This script was written to take the original BED files produced by MCscan (wild_rice.bed & latifolia.bed) and filter them (producing new versions) to retain only duplications which were found using OrthoFinder and filtered to contain _Zizania_-specific genes using the script _find_zizania_specific_duplications.py_.
+
+## synteny.py
+This script was originally written by Haibao Tang (https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. Line 61 was modified so that the species label (args[7]) will be printed in italics. I also added another argument (args[8]) so that the chromosome label will not be in italics.
