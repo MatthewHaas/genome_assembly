@@ -22,4 +22,4 @@ This script was originally written by Haibao Tang (https://github.com/tanghaibao
 <img src="images/201014_fig2_venn_diagram_with_commas.png" width="500">
 
 ### NWR relatives
-<img src="images/201014_venn_diagram_with_rice_relatives_and_commas.png" width="500"?
+<img src="images/201014_venn_diagram_with_rice_relatives_and_commas.png" width="500">
