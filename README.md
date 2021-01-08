@@ -18,4 +18,8 @@ This script was written to take the original BED files produced by MCscan (wild_
 This script was originally written by Haibao Tang (https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. Line 61 was modified so that the species label (args[7]) will be printed in italics. I also added another argument (args[8]) so that the chromosome label will not be in italics.
 
 ## venn diagrams
+### NWR and major grass species
 <img src="images/201014_fig2_venn_diagram_with_commas.png" width="500">
+
+### NWR relatives
+<img src="images/201014_venn_diagram_with_rice_relatives_and_commas.png" width="500"?
