@@ -4,6 +4,7 @@
 
 ## dotplot.py
 This script was originally written by Haibao Tang (https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. The following changes were made by hard-coding my desired output into the original script: 1) The font color of the chromosome labels and positions were changed from grey to black, 2) the labels for the x and y axes were changed to _Zizania palustris_ and _Oryza sativa_ (respectively) rather than 'wild_rice' and 'oryza' (which are the BED file names), and 3) the xlimit was slightly increased (along with the length of chr 15, scf 16, and scf 458 (in order to make the chromosome labels legible).
+<img src="images/wild_rice.oryza.filtered.png" width="500">
 
 ## find_zizania_specific_duplications.py
 This script filters the Duplications.tsv file created by OrthoFinder to contain _Zizania_-specific duplications. The script was written to retain only genes which were duplicated once. Genes with more than one additional copy were not retained for simplicity.
