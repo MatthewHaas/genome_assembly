@@ -9,14 +9,16 @@ This script was originally written by Haibao Tang (https://github.com/tanghaibao
 ## find_zizania_specific_duplications.py
 This script filters the Duplications.tsv file created by OrthoFinder to contain _Zizania_-specific duplications. The script was written to retain only genes which were duplicated once. Genes with more than one additional copy were not retained for simplicity.
 
-## karyotpe.py
+## karyotype.py
 This script was originally written by Haibao Tang (https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. Line 40 was altered so that ```arg[5]``` (the name we assign to each track in the layout file) is printed in italics. Line 239 was also changed (dividing vpad by 2 was removed) to make extra room on the margin so that _Zizania palustris_ could be fully written out (versus abbreviating it as _Z. palustris_--which also didn't fit initally--it ran into the representations of the chromosomes.
+<img src="images/Figure_3A_updated.png" width="500"><img src="images/Figure_3B_updated.png" width="500">
 
 ## make_duplication_bed_files.py
 This script was written to take the original BED files produced by MCscan (wild_rice.bed & latifolia.bed) and filter them (producing new versions) to retain only duplications which were found using OrthoFinder and filtered to contain _Zizania_-specific genes using the script _find_zizania_specific_duplications.py_.
 
 ## synteny.py
 This script was originally written by Haibao Tang (https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. Line 61 was modified so that the species label ```args[7]``` will be printed in italics. I also added another argument ```args[8]``` so that the chromosome label will not be in italics.
+<img src="images/Figure_3C_updated.png" width="500">
 
 ## venn diagrams
 ### NWR and major grass species
