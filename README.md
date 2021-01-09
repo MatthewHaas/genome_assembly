@@ -1,5 +1,5 @@
 # README for genome_assembly
-## Annotation of the Zizania palustris genome
+## Annotation of the _Zizania palustris_ genome
 
 
 ## dotplot.py
