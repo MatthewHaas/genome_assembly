@@ -15,7 +15,7 @@ Please use this directory to navigate this README to find the scripts for a part
 5. [Supporting Figure S2](#Supporting-Figure-S2)
 6. Supporting Figure S3
 7. [Supporting Figure S4](#Supporting-Figure-S4)
-8. Supporting Figure S5
+8. [Supporting Figure S5](#Supporting-Figure-S5)
 9. Supporting Figure S6
 10. [Supporting Figure S7](#Supporting-Figure-S7)
 11. [Supporting Figure S8](#Supporting-Figure-S8)
@@ -72,6 +72,11 @@ This script was written to take the original BED files produced by MCscan (```wi
 # Supporting Figure S4
 This figure came from Tom & Marissa, so we need to find the script that accompanies it. The letters were added in PowerPoint.
 <img src="images/Supporting_Figure_S5_repetitive_element_barplots.png" width="500">
+
+# Supporting Figure S5
+This combined figure came from multiple R scripts used to parse gene ontology (GO) data and plot the most abundant GO terms. The R scripts used to generate this figure are located in the [gene_ontolgoy](gene_ontology) subdirectory. They include a modified version of the pie chart function. That script ([gene_ontology/modified_pie_function.R](gene_ontology/modified_pie_function.R)) must be loaded when using these scripts using the ```source()``` function. The scripts include that function, but you should make sure that the modified version of the script is in your working directory, otherwise it will not work properly.
+
+<img src="images/Supporting_Figure_S6_gene_ontology_plots.png" width="500">
 
 # Supporting Figure S7
 ## NWR relatives venn diagram
