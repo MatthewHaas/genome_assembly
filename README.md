@@ -5,7 +5,7 @@
 ## dotplot.py
 This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. The following changes were made by hard-coding my desired output into the original script: 
 1. The font color of the chromosome labels and positions were changed from grey to black
-2. The labels for the x and y axes were changed to _Zizania palustris_ and _Oryza sativa_ (respectively) rather than 'wild_rice' and 'oryza' (which are the BED file names)
+2. The labels for the x and y axes were changed to _Zizania palustris_ and _Oryza sativa_ (respectively) rather than ```wild_rice``` and ```oryza``` (which are the BED file names)
 3. The xlimit was slightly increased (along with the length of chr 15, scf 16, and scf 458 (in order to make the chromosome labels legible).
 
 <img src="images/wild_rice.oryza.filtered.png" width="500">
@@ -21,7 +21,7 @@ This script was originally written by Haibao Tang and can be found [here](https:
 <img src="images/Figure_3A_updated.png" width="500"> <img src="images/Figure_3B_updated.png" width="500">
 
 ## make_duplication_bed_files.py
-This script was written to take the original BED files produced by MCscan (```wild_rice.bed``` & ```latifolia.bed```) and filter them (producing new versions) to retain only duplications which were found using OrthoFinder and filtered to contain _Zizania_-specific genes using the script _find_zizania_specific_duplications.py_.
+This script was written to take the original BED files produced by MCscan (```wild_rice.bed``` & ```latifolia.bed```) and filter them (producing new versions) to retain only duplications which were found using OrthoFinder and filtered to contain _Zizania_-specific genes using the script [find_zizania_specific_duplications.py](find_zizania_specific_duplications.py).
 
 ## run_downsampled_circos.sh
 This script generates the Circos plot from the Supporting Figures that features SNP density after downsampling. The legend was added in PowerPoint. This shell script is used in conjunction with the Circos configuration which you can find [here](downsampled_circos.conf). The shell scripts that we used to perform the downsampling can be found [here](downsampling_scripts).
