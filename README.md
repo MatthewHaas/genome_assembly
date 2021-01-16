@@ -11,7 +11,7 @@ This script was originally written by Haibao Tang and can be found [here](https:
 <img src="images/wild_rice.oryza.filtered.png" width="500">
 
 ## find_zizania_specific_duplications.py
-This script filters the Duplications.tsv file created by OrthoFinder to contain _Zizania_-specific duplications. The script was written to retain only genes which were duplicated once. Genes with more than one additional copy were not retained for simplicity.
+This script filters the ```Duplications.tsv``` file created by OrthoFinder to contain _Zizania_-specific duplications. The script was written to retain only genes which were duplicated once. Genes with more than one additional copy were not retained for simplicity.
 
 ## karyotype.py
 This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. Line 40 was altered so that ```arg[5]``` (the name we assign to each track in the layout file) is printed in italics. Line 239 was also changed (dividing vpad by 2 was removed) to make extra room on the margin so that _Zizania palustris_ could be fully written out (versus abbreviating it as _Z. palustris_--which also didn't fit initally--it ran into the representations of the chromosomes.
@@ -19,7 +19,7 @@ This script was originally written by Haibao Tang and can be found [here](https:
 <img src="images/Figure_3A_updated.png" width="500"> <img src="images/Figure_3B_updated.png" width="500">
 
 ## make_duplication_bed_files.py
-This script was written to take the original BED files produced by MCscan (wild_rice.bed & latifolia.bed) and filter them (producing new versions) to retain only duplications which were found using OrthoFinder and filtered to contain _Zizania_-specific genes using the script _find_zizania_specific_duplications.py_.
+This script was written to take the original BED files produced by MCscan (```wild_rice.bed``` & ```latifolia.bed```) and filter them (producing new versions) to retain only duplications which were found using OrthoFinder and filtered to contain _Zizania_-specific genes using the script _find_zizania_specific_duplications.py_.
 
 ## run_downsampled_circos.sh
 This script generates the Circos plot from the Supporting Figures that features SNP density after downsampling. The legend was added in PowerPoint. This shell script is used in conjunction with the Circos configuration which you can find [here](downsampled_circos.conf). The shell scripts that we used to perform the downsampling can be found [here](downsampling_scripts).
