@@ -5,7 +5,7 @@ This repository supports the work that went into characterizing the Northern Wil
 Once the manuscript is posted to bioRxiv, that link will be available here.
 Upon publication, that link will be shared as well.
 
-Please use this directory to navigate this README to find the scripts for a particular analysis or figure with ease.
+Please use the directory to navigate this README to find the scripts for a particular analysis or figure with ease.
 
 ## Directory
 1. [Figure 1](#Figure-1)
@@ -21,8 +21,8 @@ Please use this directory to navigate this README to find the scripts for a part
 11. [Supporting Figure S8](#Supporting-Figure-S8)
 12. [Supporting Figure S9](#Supporting-Figure-S9)
 13. Supporting Figure S10
-14. Supporting Figure S11
-15. Supporting Figure S12
+14. [Supporting Figure S11](#Supporting-Figure-S11)
+15. [Supporting Figure S12](#Supporting-Figure-S12)
 16. [Supporting Figure S13](#Supporting-Figure-S13)
 17. [Supporting Figure S14](#Supporting-Figure-S14)
 
@@ -101,6 +101,26 @@ This script was originally written by Haibao Tang and can be found [here](https:
 # Supporting Figure S9
 ## We plotted the counts per million (cpm) data from the tissue-specific expression work to generate this figure using the script [plot_putative_shattering_gene_expression.R](plot_putatitive_shattering_gene_expr.R)
 <img src="images/Supporting_Figure_S9_putative_shattering_gene_expr_plots.png" width="500">
+
+# Supporting Figure S11
+This is the alignment figure for the putative NWR _sh4_ gene to its ortholog in _O. sativa_. The scripts used to perform the alignment are located in [alignment_scripts](alignment_scripts). Briefly, the steps for the alignment were:
+1. Identify orthologous protein sequences using OrthoFinder output
+2. Use Tom Kono's script [Backtranslate_Orthogroup_TK.py](alignment_scripts/Backtranslate_Orthogroup_TK.py) and ```CDS``` files to convert the amino acid sequence to a nucleotide sequence.
+3. Perform alignment using Clustal Omega
+
+The output of this pipeline was a text file, so the text-based alignment file was imported into PowerPoint where colors were added to make the SNPs easier to find and fonts were changed to suit personal preference.
+
+<img src="images/Supporting_Figure_S10_sh4_nucleotides_aligned_labels_updated.png" width="500">
+
+# Supporting Figure S12
+This is the alignment figure for the putative NWR _SHAT1_ gene to its ortholog in _O. sativa_. The scripts used to perform the alignment are located in [alignment_scripts](alignment_scripts). Briefly, the steps for the alignment were:
+1. Identify orthologous protein sequences using OrthoFinder output
+2. Use Tom Kono's script [Backtranslate_Orthogroup_TK.py](alignment_scripts/Backtranslate_Orthogroup_TK.py) and ```CDS``` files to convert the amino acid sequence to a nucleotide sequence.
+3. Perform alignment using Clustal Omega
+
+The output of this pipeline was a text file, so the text-based alignment file was imported into PowerPoint where colors were added to make the SNPs easier to find and fonts were changed to suit personal preference.
+
+<img src="images/Supporting_Figure_S12_SHAT1_nucleotides_aligned_labels_updated.png" width="500">
 
 # Supporting Figure S13
 ## We used the script [plot_resistance_gene_distribution.R](plot_resistance_gene_distribution.R) to plot the distribution of disease resistance genes (and related genes) from the predicted function of our annotated genes.
