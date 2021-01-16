@@ -17,7 +17,7 @@ Please use this directory to navigate this README to find the scripts for a part
 4. [Supporting Figure S1](#Supporting-Figure-S1)
 5. [Supporting Figure S2](#Supporting-Figure-S2)
 6. Supporting Figure S3
-7. Supporting Figure S4
+7. [Supporting Figure S4](#Supporting-Figure-S4)
 8. Supporting Figure S5
 9. Supporting Figure S6
 10. [Supporting Figure S7](#Supporting-Figure-S7)
@@ -71,6 +71,10 @@ This script filters the ```Duplications.tsv``` file created by OrthoFinder to co
 
 ## make_duplication_bed_files.py
 This script was written to take the original BED files produced by MCscan (```wild_rice.bed``` & ```latifolia.bed```) and filter them (producing new versions) to retain only duplications which were found using OrthoFinder and filtered to contain _Zizania_-specific genes using the script [find_zizania_specific_duplications.py](find_zizania_specific_duplications.py).
+
+# Supporting Figure S4
+This figure came from Tom & Marissa, so we need to find the script that accompanies it. The letters were added in PowerPoint.
+<img src="images/Supporting_Figure_S5_repetitive_element_barplots.png" width="500">
 
 # Supporting Figure S7
 ## NWR relatives venn diagram
