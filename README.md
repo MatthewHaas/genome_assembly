@@ -15,7 +15,7 @@ Please use this directory to navigate this README to find the scripts for a part
 2. [Figure 2](#Figure-2)
 3. [Figure 3](#Figure-3)
 4. [Supporting Figure S1](#Supporting-Figure-S1)
-5. Supporting Figure S2
+5. [Supporting Figure S2](#Supporting-Figure-S2)
 6. Supporting Figure S3
 7. Supporting Figure S4
 8. Supporting Figure S5
@@ -60,6 +60,10 @@ This script was originally written by Haibao Tang and can be found [here](https:
 The purpose of this code was to add a scale bar to the image of tissues collected for the RNA-seq portion of the study. This work was done in a Jupyter Notebook using Python. The letters were added in PowerPoint.
 
 <img src="images/Supporting_Figure_S1_RNAseq_tissues_with_scalebar_and_letters.png" width="500">
+
+# Supporting Figure S2
+Plots show basic genome assembly statistics
+<img src="images/cumulative_plot.png" width="500"> <img src="images/Nx_plot.png" width="500">
 
 ## dotplot.py
 This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. The following changes were made by hard-coding my desired output into the original script: 
