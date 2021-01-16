@@ -3,7 +3,7 @@
 This README is organized alphabetically, but the directory can be used to locate the scrips for a particular analysis or figure with ease.
 
 ## Directory
-1. [Figure 1](#-Figure-1)
+1. [Figure 1](#Figure-1)
 2. [Figure 2A]() [Figure 2B]()
 3. [Figure 3A](#-karyotype.py) [Figure 3B](#-karyotype.py) [Figure 3C](#-synteny.py)
 4. Supporting Figure 1
