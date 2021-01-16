@@ -1,14 +1,24 @@
 # README for genome_assembly
 ## Annotation of the _Zizania palustris_ genome
 This README is organized alphabetically, but the directory can be used to locate the scrips for a particular analysis or figure with ease.
+
+## Directory
 1. [Figure 1](run_repeat_circos.sh)
-2. Figure 2
-     [Figure 2A]()
-     [Figure 2B]()
-3. Figure 3
-     [Figure 3A](karyotype.py)
-     [Figure 3B](karyotype.py)
-     [Figure 3C](synteny.py)
+2. [Figure 2A]() [Figure 2B]()
+3. [Figure 3A](karyotype.py) [Figure 3B](karyotype.py) [Figure 3C](synteny.py)
+4. Supporting Figure 1
+5. Supporting Figure 2
+6. Supporting Figure 3
+7. Supporting Figure 4
+8. Supporting Figure 5
+9. Supporting Figure 6
+10. Supporting Figure 7
+11. Supporting Figure 8
+12. Supporting Figure 9
+13. Supporting Figure 10
+14. Supporting Figure 11
+15. Supporting Figure 12
+16. Supporting Figure 13
 
 ## dotplot.py
 This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. The following changes were made by hard-coding my desired output into the original script: 
