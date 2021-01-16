@@ -20,13 +20,14 @@ Please use this directory to navigate this README to find the scripts for a part
 7. Supporting Figure S4
 8. Supporting Figure S5
 9. Supporting Figure S6
-10. Supporting Figure S7
+10. [Supporting Figure S7](#Supporting-Figure-S7)
 11. Supporting Figure S8
 12. Supporting Figure S9
 13. Supporting Figure S10
 14. Supporting Figure S11
 15. Supporting Figure S12
 16. Supporting Figure S13
+17. [Supporting Figure S14](#Supporting-Figure-S14)
 
 # Figure 1
 ## run_repeat_circos.sh
@@ -74,11 +75,12 @@ This script filters the ```Duplications.tsv``` file created by OrthoFinder to co
 ## make_duplication_bed_files.py
 This script was written to take the original BED files produced by MCscan (```wild_rice.bed``` & ```latifolia.bed```) and filter them (producing new versions) to retain only duplications which were found using OrthoFinder and filtered to contain _Zizania_-specific genes using the script [find_zizania_specific_duplications.py](find_zizania_specific_duplications.py).
 
+# Supporting Figure S7
+## NWR relatives venn diagram
+<img src="images/201014_venn_diagram_with_rice_relatives_and_commas.png" width="500">
+
+# Supporting Figure S14
 ## run_downsampled_circos.sh
 This script generates the Circos plot from the Supporting Figures that features SNP density after downsampling. The legend was added in PowerPoint. This shell script is used in conjunction with the Circos configuration which you can find [here](downsampled_circos.conf). The shell scripts that we used to perform the downsampling can be found [here](downsampling_scripts).
 
 <img src="images/Supporting_Figure_S14_circos_snp_downsampling.png" width="500">
-
-### NWR relatives venn diagram
-
-<img src="images/201014_venn_diagram_with_rice_relatives_and_commas.png" width="500">
