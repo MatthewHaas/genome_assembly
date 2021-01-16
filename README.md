@@ -19,7 +19,7 @@ This script was originally written by Haibao Tang (https://github.com/tanghaibao
 This script was written to take the original BED files produced by MCscan (wild_rice.bed & latifolia.bed) and filter them (producing new versions) to retain only duplications which were found using OrthoFinder and filtered to contain _Zizania_-specific genes using the script _find_zizania_specific_duplications.py_.
 
 ## run_downsampled_circos.sh
-This script generates the Circos plot from the Supporting Figures that features SNP density after downsampling. The legend was added in PowerPoint. This shell script is used in conjunction with the Circos configuration which you can find [here](downsampled_circos.conf).
+This script generates the Circos plot from the Supporting Figures that features SNP density after downsampling. The legend was added in PowerPoint. This shell script is used in conjunction with the Circos configuration which you can find [here](downsampled_circos.conf). The shell scripts that we used to perform the downsampling can be found [here](downsampling_scripts).
 
 <img src="images/Supporting_Figure_S14_circos_snp_downsampling.png" width="500">
 
