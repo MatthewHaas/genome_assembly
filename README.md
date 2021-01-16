@@ -26,7 +26,7 @@ Please use this directory to navigate this README to find the scripts for a part
 13. Supporting Figure S10
 14. Supporting Figure S11
 15. Supporting Figure S12
-16. Supporting Figure S13
+16. [Supporting Figure S13](#Supporting-Figure-S13)
 17. [Supporting Figure S14](#Supporting-Figure-S14)
 
 # Figure 1
@@ -89,6 +89,11 @@ This script was originally written by Haibao Tang and can be found [here](https:
 # Supporting Figure S9
 ## We plotted the counts per million (cpm) data from the tissue-specific expression work to generate this figure using the script [plot_putative_shattering_gene_expression.R](plot_putatitive_shattering_gene_expr.R)
 <img src="images/Supporting_Figure_S9_putative_shattering_gene_expr_plots.png" width="500">
+
+# Supporting Figure S13
+## We used the script [plot_resistance_gene_distribution.R](plot_resistance_gene_distribution.R) to plot the distribution of disease resistance genes (and related genes) from the predicted function of our annotated genes.
+
+<img src="images/Supporting_Figure_S13_disease_resistance_gene_distr.png" width="500">
 
 # Supporting Figure S14
 ## run_downsampled_circos.sh
