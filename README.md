@@ -24,7 +24,7 @@ This script generates the Circos plot from the Supporting Figures that features 
 <img src="images/Supporting_Figure_S14_circos_snp_downsampling.png" width="500">
 
 ## run_repeat_circos.sh
-This script generated the Circos plot shown in Figure 1. The figure shows the genome-wide distribution of genes and repetitive elements. The legend was added in PowerPoint. This shell script is used in conjunction with the Circos configuration file which you can find [repeat_specific_circos.conf](here).
+This script generated the Circos plot shown in Figure 1. The figure shows the genome-wide distribution of genes and repetitive elements. The legend was added in PowerPoint. This shell script is used in conjunction with the Circos configuration file which you can find [here](repeat_specific_circos.conf).
 
 <img src="images/Figure_1_circos_plot.png" width="500">
 
