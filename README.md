@@ -22,7 +22,7 @@ Please use this directory to navigate this README to find the scripts for a part
 9. Supporting Figure S6
 10. [Supporting Figure S7](#Supporting-Figure-S7)
 11. [Supporting Figure S8](#Supporting-Figure-S8)
-12. Supporting Figure S9
+12. [Supporting Figure S9](#Supporting-Figure-S9)
 13. Supporting Figure S10
 14. Supporting Figure S11
 15. Supporting Figure S12
@@ -85,6 +85,10 @@ This script was originally written by Haibao Tang and can be found [here](https:
 3. The xlimit was slightly increased (along with the length of chr 15, scf 16, and scf 458 (in order to make the chromosome labels legible).
 
 <img src="images/wild_rice.oryza.filtered.png" width="500">
+
+# Supporting Figure S9
+## We plotted the counts per million (cpm) data from the tissue-specific expression work to generate this figure using the script [plot_putative_shattering_gene_expression.R](plot_putatitive_shattering_gene_expr.R)
+<img src="images/Supporting_Figure_S9_putative_shattering_gene_expr_plots.png" width="500">
 
 # Supporting Figure S14
 ## run_downsampled_circos.sh
