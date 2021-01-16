@@ -1,11 +1,11 @@
 # README for genome_assembly
 ## Annotation of the _Zizania palustris_ genome
-This README is organized alphabetically, but the directory can be used to locate the scrips for a particular analysis or figure with ease.
+Please use thos directory to navigate this README to find the scripts for a particular analysis or figure with ease.
 
 ## Directory
 1. [Figure 1](#Figure-1)
-2. [Figure 2A]() [Figure 2B]()
-3. [Figure 3A](#-karyotype.py) [Figure 3B](#-karyotype.py) [Figure 3C](#-synteny.py)
+2. [Figure 2](#Figure-2)
+3. [Figure 3](#Figure-3)
 4. Supporting Figure 1
 5. Supporting Figure 2
 6. Supporting Figure 3
@@ -31,12 +31,20 @@ This script was originally written by Haibao Tang and can be found [here](https:
 ## find_zizania_specific_duplications.py
 This script filters the ```Duplications.tsv``` file created by OrthoFinder to contain _Zizania_-specific duplications. The script was written to retain only genes which were duplicated once. Genes with more than one additional copy were not retained for simplicity.
 
+# Figure 3
 ## karyotype.py
 This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots.
 1. Line 40 was altered so that ```arg[5]``` (the name we assign to each track in the layout file) is printed in italics. 
 2. Line 239 was also changed (dividing vpad by 2 was removed) to make extra room on the margin so that _Zizania palustris_ could be fully written out (versus abbreviating it as _Z. palustris_--which also didn't fit initally--it ran into the representations of the chromosomes.
 
 <img src="images/Figure_3A_updated.png" width="500"> <img src="images/Figure_3B_updated.png" width="500">
+
+## synteny.py
+This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots.
+1. Line 61 was modified so that the species label ```args[7]``` will be printed in italics. 
+2. I also added another argument ```args[8]``` so that the chromosome label will not be in italics.
+
+<img src="images/Figure_3C_updated.png" width="500">
 
 ## make_duplication_bed_files.py
 This script was written to take the original BED files produced by MCscan (```wild_rice.bed``` & ```latifolia.bed```) and filter them (producing new versions) to retain only duplications which were found using OrthoFinder and filtered to contain _Zizania_-specific genes using the script [find_zizania_specific_duplications.py](find_zizania_specific_duplications.py).
@@ -52,18 +60,11 @@ This script generated the Circos plot shown in Figure 1. The figure shows the ge
 
 <img src="images/Figure_1_circos_plot.png" width="500">
 
-## synteny.py
-This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots.
-1. Line 61 was modified so that the species label ```args[7]``` will be printed in italics. 
-2. I also added another argument ```args[8]``` so that the chromosome label will not be in italics.
-
-<img src="images/Figure_3C_updated.png" width="500">
-
-## venn diagrams
-### NWR and major grass species
+# Figure 2
+## NWR and major grass species venn diagram
 
 <img src="images/201014_fig2_venn_diagram_with_commas.png" width="500">
 
-### NWR relatives
+### NWR relatives venn diagram
 
 <img src="images/201014_venn_diagram_with_rice_relatives_and_commas.png" width="500">
