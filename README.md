@@ -21,7 +21,7 @@ Please use this directory to navigate this README to find the scripts for a part
 8. Supporting Figure S5
 9. Supporting Figure S6
 10. [Supporting Figure S7](#Supporting-Figure-S7)
-11. Supporting Figure S8
+11. [Supporting Figure S8](#Supporting-Figure-S8)
 12. Supporting Figure S9
 13. Supporting Figure S10
 14. Supporting Figure S11
@@ -66,14 +66,6 @@ Plots show basic genome assembly statistics
 
 <img src="images/cumulative_plot.png" width="500"> <img src="images/Nx_plot.png" width="500">
 
-## dotplot.py
-This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. The following changes were made by hard-coding my desired output into the original script: 
-1. The font color of the chromosome labels and positions were changed from grey to black
-2. The labels for the x and y axes were changed to _Zizania palustris_ and _Oryza sativa_ (respectively) rather than ```wild_rice``` and ```oryza``` (which are the BED file names)
-3. The xlimit was slightly increased (along with the length of chr 15, scf 16, and scf 458 (in order to make the chromosome labels legible).
-
-<img src="images/wild_rice.oryza.filtered.png" width="500">
-
 ## find_zizania_specific_duplications.py
 This script filters the ```Duplications.tsv``` file created by OrthoFinder to contain _Zizania_-specific duplications. The script was written to retain only genes which were duplicated once. Genes with more than one additional copy were not retained for simplicity.
 
@@ -82,7 +74,17 @@ This script was written to take the original BED files produced by MCscan (```wi
 
 # Supporting Figure S7
 ## NWR relatives venn diagram
+
 <img src="images/201014_venn_diagram_with_rice_relatives_and_commas.png" width="500">
+
+# Supporting Figure S8
+## dotplot.py
+This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. The following changes were made by hard-coding my desired output into the original script: 
+1. The font color of the chromosome labels and positions were changed from grey to black
+2. The labels for the x and y axes were changed to _Zizania palustris_ and _Oryza sativa_ (respectively) rather than ```wild_rice``` and ```oryza``` (which are the BED file names)
+3. The xlimit was slightly increased (along with the length of chr 15, scf 16, and scf 458 (in order to make the chromosome labels legible).
+
+<img src="images/wild_rice.oryza.filtered.png" width="500">
 
 # Supporting Figure S14
 ## run_downsampled_circos.sh
