@@ -13,7 +13,7 @@ Please use this directory to navigate this README to find the scripts for a part
 3. [Figure 3](#Figure-3)
 4. [Supporting Figure S1](#Supporting-Figure-S1)
 5. [Supporting Figure S2](#Supporting-Figure-S2)
-6. Supporting Figure S3
+6. [Supporting Figure S3](#Supporting-Figure-S3)
 7. [Supporting Figure S4](#Supporting-Figure-S4)
 8. [Supporting Figure S5](#Supporting-Figure-S5)
 9. Supporting Figure S6
@@ -61,7 +61,7 @@ The purpose of this code was to add a scale bar to the image of tissues collecte
 # Supporting Figure S2
 Plots show basic genome assembly statistics
 
-<img src="images/cumulative_plot.png" width="500"> <img src="images/Nx_plot.png" width="500">
+<img src="images/Nx_plot.png" width="500"> <img src="images/cumulative_plot.png" width="500">
 
 ## find_zizania_specific_duplications.py
 This script filters the ```Duplications.tsv``` file created by OrthoFinder to contain _Zizania_-specific duplications. The script was written to retain only genes which were duplicated once. Genes with more than one additional copy were not retained for simplicity.
@@ -69,8 +69,14 @@ This script filters the ```Duplications.tsv``` file created by OrthoFinder to co
 ## make_duplication_bed_files.py
 This script was written to take the original BED files produced by MCscan (```wild_rice.bed``` & ```latifolia.bed```) and filter them (producing new versions) to retain only duplications which were found using OrthoFinder and filtered to contain _Zizania_-specific genes using the script [find_zizania_specific_duplications.py](find_zizania_specific_duplications.py).
 
+# Supporting Figure S3
+The script [WR_repeats_karyoplot.R](WR_repeats_karyoplot.R) was used to generate this figure. Y-axis labels were fixed in PowerPoint because we wanted chromosomes 1-15 to have the prefix "Chr" but scaffolds 16 and 458 to have the prefix "Scf" to avoid confusion if they were to have the "Chr" label.
+
+<img src="images/Supporting_Figure_S4_karyotypeR_chr_labels_fixed.png" width="500">
+
 # Supporting Figure S4
 This figure came from Tom & Marissa, so we need to find the script that accompanies it. The letters were added in PowerPoint.
+
 <img src="images/Supporting_Figure_S5_repetitive_element_barplots.png" width="500">
 
 # Supporting Figure S5
