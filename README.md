@@ -14,7 +14,9 @@ This script was originally written by Haibao Tang and can be found [here](https:
 This script filters the ```Duplications.tsv``` file created by OrthoFinder to contain _Zizania_-specific duplications. The script was written to retain only genes which were duplicated once. Genes with more than one additional copy were not retained for simplicity.
 
 ## karyotype.py
-This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. Line 40 was altered so that ```arg[5]``` (the name we assign to each track in the layout file) is printed in italics. Line 239 was also changed (dividing vpad by 2 was removed) to make extra room on the margin so that _Zizania palustris_ could be fully written out (versus abbreviating it as _Z. palustris_--which also didn't fit initally--it ran into the representations of the chromosomes.
+This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots.
+1. Line 40 was altered so that ```arg[5]``` (the name we assign to each track in the layout file) is printed in italics. 
+2. Line 239 was also changed (dividing vpad by 2 was removed) to make extra room on the margin so that _Zizania palustris_ could be fully written out (versus abbreviating it as _Z. palustris_--which also didn't fit initally--it ran into the representations of the chromosomes.
 
 <img src="images/Figure_3A_updated.png" width="500"> <img src="images/Figure_3B_updated.png" width="500">
 
@@ -32,7 +34,9 @@ This script generated the Circos plot shown in Figure 1. The figure shows the ge
 <img src="images/Figure_1_circos_plot.png" width="500">
 
 ## synteny.py
-This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. Line 61 was modified so that the species label ```args[7]``` will be printed in italics. I also added another argument ```args[8]``` so that the chromosome label will not be in italics.
+This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots.
+1. Line 61 was modified so that the species label ```args[7]``` will be printed in italics. 
+2. I also added another argument ```args[8]``` so that the chromosome label will not be in italics.
 
 <img src="images/Figure_3C_updated.png" width="500">
 
