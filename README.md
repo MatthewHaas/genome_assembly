@@ -110,8 +110,6 @@ This is the alignment figure for the putative NWR _sh4_ gene to its ortholog in 
 
 The output of this pipeline was a text file, so the text-based alignment file was imported into PowerPoint where colors were added to make the SNPs easier to find and fonts were changed to suit personal preference.
 
-<img src="images/Supporting_Figure_S10_sh4_nucleotides_aligned_labels_updated.png" width="500">
-
 # Supporting Figure S12
 This is the alignment figure for the putative NWR _SHAT1_ gene to its ortholog in _O. sativa_. The scripts used to perform the alignment are located in [alignment_scripts](alignment_scripts). Briefly, the steps for the alignment were:
 1. Identify orthologous protein sequences using OrthoFinder output
@@ -119,8 +117,6 @@ This is the alignment figure for the putative NWR _SHAT1_ gene to its ortholog i
 3. Perform alignment using Clustal Omega
 
 The output of this pipeline was a text file, so the text-based alignment file was imported into PowerPoint where colors were added to make the SNPs easier to find and fonts were changed to suit personal preference.
-
-<img src="images/Supporting_Figure_S12_SHAT1_nucleotides_aligned_labels_updated.png" width="500">
 
 # Supporting Figure S13
 ## We used the script [plot_resistance_gene_distribution.R](plot_resistance_gene_distribution.R) to plot the distribution of disease resistance genes (and related genes) from the predicted function of our annotated genes.
