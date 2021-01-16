@@ -14,19 +14,19 @@ Please use this directory to navigate this README to find the scripts for a part
 1. [Figure 1](#Figure-1)
 2. [Figure 2](#Figure-2)
 3. [Figure 3](#Figure-3)
-4. Supporting Figure 1
-5. Supporting Figure 2
-6. Supporting Figure 3
-7. Supporting Figure 4
-8. Supporting Figure 5
-9. Supporting Figure 6
-10. Supporting Figure 7
-11. Supporting Figure 8
-12. Supporting Figure 9
-13. Supporting Figure 10
-14. Supporting Figure 11
-15. Supporting Figure 12
-16. Supporting Figure 13
+4. [Supporting Figure S1](#Supporting-Figure-S1)
+5. Supporting Figure S2
+6. Supporting Figure S3
+7. Supporting Figure S4
+8. Supporting Figure S5
+9. Supporting Figure S6
+10. Supporting Figure S7
+11. Supporting Figure S8
+12. Supporting Figure S9
+13. Supporting Figure S10
+14. Supporting Figure S11
+15. Supporting Figure S12
+16. Supporting Figure S13
 
 # Figure 1
 ## run_repeat_circos.sh
@@ -53,6 +53,12 @@ This script was originally written by Haibao Tang and can be found [here](https:
 2. I also added another argument ```args[8]``` so that the chromosome label will not be in italics.
 
 <img src="images/Figure_3C_updated.png" width="500">
+
+# Supporting Figure S1
+## add_scalebar_to_annotation_photo.ipynb
+The purpose of this code was to add a scale bar to the image of tissues collected for the RNA-seq portion of the study. This work was done in a Jupyter Notebook using Python. The letters were added in PowerPoint.
+
+<img src="images/Supporting_Figure_S1_RNAseq_tissues_with_scalebar_and_letters.png" width="500">
 
 ## dotplot.py
 This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. The following changes were made by hard-coding my desired output into the original script: 
