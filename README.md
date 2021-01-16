@@ -18,6 +18,7 @@ This script was written to take the original BED files produced by MCscan (wild_
 
 ## run_downsampled_circos.sh
 This script generates the Circos plot from the Supporting Figures that features SNP density after downsampling. The legend was added in PowerPoint.
+
 <img src="images/Supporting_Figure_S14_circos_snp_downsampling.png" width="500">
 
 ## synteny.py
