@@ -63,6 +63,7 @@ The purpose of this code was to add a scale bar to the image of tissues collecte
 
 # Supporting Figure S2
 Plots show basic genome assembly statistics
+
 <img src="images/cumulative_plot.png" width="500"> <img src="images/Nx_plot.png" width="500">
 
 ## dotplot.py
