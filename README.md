@@ -16,7 +16,7 @@ Please use the directory to navigate this README to find the scripts for a parti
 6. [Supporting Figure S3](#Supporting-Figure-S3)
 7. [Supporting Figure S4](#Supporting-Figure-S4)
 8. [Supporting Figure S5](#Supporting-Figure-S5)
-9. Supporting Figure S6
+9. [Supporting Figure S6](#Supporting-Figure-S6)
 10. [Supporting Figure S7](#Supporting-Figure-S7)
 11. [Supporting Figure S8](#Supporting-Figure-S8)
 12. [Supporting Figure S9](#Supporting-Figure-S9)
@@ -83,6 +83,11 @@ This figure came from Tom & Marissa, so we need to find the script that accompan
 This combined figure came from multiple R scripts used to parse gene ontology (GO) data and plot the most abundant GO terms. The R scripts used to generate this figure are located in the [gene_ontolgoy](gene_ontology) subdirectory. They include a modified version of the pie chart function. That script ([gene_ontology/modified_pie_function.R](gene_ontology/modified_pie_function.R)) must be loaded when using these scripts using the ```source()``` function. The scripts include that function, but you should make sure that the modified version of the script is in your working directory, otherwise it will not work properly.
 
 <img src="images/Supporting_Figure_S6_gene_ontology_plots.png" width="500">
+
+# Supporting Figure S6
+This figure is for the tissue specificity work. Figures were combined and letters added in PowerPoint to make the compound figure in the manuscript.
+
+<img src="images/copy_of_tau_density_plot.png" width="500"> <img src="images/reduced_size_copy_of_gene_specificity_barplot.png" width="500"> <img src="images/copy_of_tissue_specificity_heatmap.png" width="500">
 
 # Supporting Figure S7
 ## NWR relatives venn diagram
