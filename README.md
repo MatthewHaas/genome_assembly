@@ -124,7 +124,7 @@ This is the alignment figure for the putative NWR _SHAT1_ gene to its ortholog i
 
 The output of this pipeline was a text file, so the text-based alignment file was imported into PowerPoint where colors were added to make the SNPs easier to find and fonts were changed to suit personal preference.
 
-<img src="images/Supporting_Figure_S10_SHAT1_nucleotides_aligned_labels_updated.png" width="500">
+<img src="images/Supporting_Figure_S12_SHAT1_nucleotides_aligned_labels_updated.png" width="500">
 
 # Supporting Figure S13
 We used the script [plot_resistance_gene_distribution.R](plot_resistance_gene_distribution.R) to plot the distribution of disease resistance genes (and related genes) from the predicted function of our annotated genes.
