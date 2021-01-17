@@ -99,12 +99,13 @@ This script was originally written by Haibao Tang and can be found [here](https:
 
 # Supporting Figure S9
 We plotted the counts per million (cpm) data from the tissue-specific expression work to generate this figure using the script [plot_putative_shattering_gene_expression.R](plot_putatitive_shattering_gene_expr.R)
+
 <img src="images/Supporting_Figure_S9_putative_shattering_gene_expr_plots.png" width="500">
 
 # Supporting Figure S10
 This figure shows the distribution of synonymous substitution rates and ratios of orthologs between _Z. palustris_ and _O. sativa_; and between _Z. palustris_ and _Z. latifolia_.
 
-<img src="images/" width="500">
+<img src="images/synonymous_substitution_value_distribution.png" width="500">  <img src="images/NWR_vs_Osativa_genes_per_block.png" width="500"> <img src="images/NWR_vs_Zlatifolia_genes_per_block.png" width="500">
 
 # Supporting Figure S11
 This is the alignment figure for the putative NWR _sh4_ gene to its ortholog in _O. sativa_. The scripts used to perform the alignment are located in [alignment_scripts](alignment_scripts). Briefly, the steps for the alignment were:
