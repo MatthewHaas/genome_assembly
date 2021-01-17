@@ -5,7 +5,7 @@ This repository supports the work that went into characterizing the Northern Wil
 Once the manuscript is posted to bioRxiv, that link will be available here.
 Upon publication, that link will be shared as well.
 
-Please use the directory to navigate this README to find the scripts for a particular analysis or figure with ease.
+Please use the directory to navigate this README to find the scripts for a particular analysis or figure with ease. This README is best viewed in Light Mode.
 
 ## Directory
 1. [Figure 1](#Figure-1)
@@ -20,11 +20,12 @@ Please use the directory to navigate this README to find the scripts for a parti
 10. [Supporting Figure S7](#Supporting-Figure-S7)
 11. [Supporting Figure S8](#Supporting-Figure-S8)
 12. [Supporting Figure S9](#Supporting-Figure-S9)
-13. Supporting Figure S10
+13. [Supporting Figure S10](#Supporting-Figure-S10)
 14. [Supporting Figure S11](#Supporting-Figure-S11)
 15. [Supporting Figure S12](#Supporting-Figure-S12)
 16. [Supporting Figure S13](#Supporting-Figure-S13)
 17. [Supporting Figure S14](#Supporting-Figure-S14)
+18. [Other scripts](#Other-scripts)
 
 # Figure 1
 ## run_repeat_circos.sh
@@ -33,7 +34,7 @@ This script generated the Circos plot shown in Figure 1. The figure shows the ge
 <img src="images/Figure_1_circos_plot.png" width="500">
 
 # Figure 2
-## NWR and major grass species venn diagram
+This figure shows the number of genes in common with (and private to) NWR and four other major grass species (_Oryza sativa_, _Zea mays_, _Sorghum bicolor_, and _Brachypodium distachyon_). The data come from an independent run of OrthoFinder so that the genes counts shown in the figure would only include genes shared by these species and none from the larger set of 20 species shown in the species tree.
 
 <img src="images/201014_fig2_venn_diagram_with_commas.png" width="500">
 
@@ -53,8 +54,7 @@ This script was originally written by Haibao Tang and can be found [here](https:
 <img src="images/Figure_3C_updated.png" width="500">
 
 # Supporting Figure S1
-## add_scalebar_to_annotation_photo.ipynb
-The purpose of this code was to add a scale bar to the image of tissues collected for the RNA-seq portion of the study. This work was done in a Jupyter Notebook using Python. The letters were added in PowerPoint.
+The purpose of this code was to add a scale bar to the image of tissues collected for the RNA-seq portion of the study. This work was done in a Jupyter Notebook using Python. The Jupyter Notebook file is [add_scalebar_to_annotation_photo.ipynb](add_scalebar_to_annotation_photo.ipynb). The letters were added in PowerPoint.
 
 <img src="images/Supporting_Figure_S1_RNAseq_tissues_with_scalebar_and_letters.png" width="500">
 
@@ -62,12 +62,6 @@ The purpose of this code was to add a scale bar to the image of tissues collecte
 Plots show basic genome assembly statistics
 
 <img src="images/Nx_plot.png" width="500"> <img src="images/cumulative_plot.png" width="500">
-
-## find_zizania_specific_duplications.py
-This script filters the ```Duplications.tsv``` file created by OrthoFinder to contain _Zizania_-specific duplications. The script was written to retain only genes which were duplicated once. Genes with more than one additional copy were not retained for simplicity.
-
-## make_duplication_bed_files.py
-This script was written to take the original ```BED``` files produced by MCscan (```wild_rice.bed``` & ```latifolia.bed```) and filter them (producing new versions) to retain only duplications which were found using OrthoFinder and filtered to contain _Zizania_-specific genes using the script [find_zizania_specific_duplications.py](find_zizania_specific_duplications.py).
 
 # Supporting Figure S3
 The script [WR_repeats_karyoplot.R](WR_repeats_karyoplot.R) was used to generate this figure. Y-axis labels were fixed in PowerPoint because we wanted chromosomes 1-15 to have the prefix "Chr" but scaffolds 16 and 458 to have the prefix "Scf" to avoid confusion if they were to have the "Chr" label.
@@ -104,8 +98,13 @@ This script was originally written by Haibao Tang and can be found [here](https:
 <img src="images/wild_rice.oryza.filtered.png" width="500">
 
 # Supporting Figure S9
-## We plotted the counts per million (cpm) data from the tissue-specific expression work to generate this figure using the script [plot_putative_shattering_gene_expression.R](plot_putatitive_shattering_gene_expr.R)
+We plotted the counts per million (cpm) data from the tissue-specific expression work to generate this figure using the script [plot_putative_shattering_gene_expression.R](plot_putatitive_shattering_gene_expr.R)
 <img src="images/Supporting_Figure_S9_putative_shattering_gene_expr_plots.png" width="500">
+
+# Supporting Figure S10
+This figure shows the distribution of synonymous substitution rates and ratios of orthologs between _Z. palustris_ and _O. sativa_; and between _Z. palustris_ and _Z. latifolia_.
+
+<img src="images/" width="500">
 
 # Supporting Figure S11
 This is the alignment figure for the putative NWR _sh4_ gene to its ortholog in _O. sativa_. The scripts used to perform the alignment are located in [alignment_scripts](alignment_scripts). Briefly, the steps for the alignment were:
@@ -115,6 +114,8 @@ This is the alignment figure for the putative NWR _sh4_ gene to its ortholog in 
 
 The output of this pipeline was a text file, so the text-based alignment file was imported into PowerPoint where colors were added to make the SNPs easier to find and fonts were changed to suit personal preference.
 
+<img src="images/Supporting_Figure_S10_sh4_nucleotides_aligned_labels_updated.png" width="500">
+
 # Supporting Figure S12
 This is the alignment figure for the putative NWR _SHAT1_ gene to its ortholog in _O. sativa_. The scripts used to perform the alignment are located in [alignment_scripts](alignment_scripts). Briefly, the steps for the alignment were:
 1. Identify orthologous protein sequences using OrthoFinder output
@@ -123,8 +124,10 @@ This is the alignment figure for the putative NWR _SHAT1_ gene to its ortholog i
 
 The output of this pipeline was a text file, so the text-based alignment file was imported into PowerPoint where colors were added to make the SNPs easier to find and fonts were changed to suit personal preference.
 
+<img src="images/Supporting_Figure_S10_SHAT1_nucleotides_aligned_labels_updated.png" width="500">
+
 # Supporting Figure S13
-## We used the script [plot_resistance_gene_distribution.R](plot_resistance_gene_distribution.R) to plot the distribution of disease resistance genes (and related genes) from the predicted function of our annotated genes.
+We used the script [plot_resistance_gene_distribution.R](plot_resistance_gene_distribution.R) to plot the distribution of disease resistance genes (and related genes) from the predicted function of our annotated genes.
 
 <img src="images/Supporting_Figure_S13_disease_resistance_gene_distr.png" width="500">
 
@@ -133,3 +136,10 @@ The output of this pipeline was a text file, so the text-based alignment file wa
 This script generates the Circos plot from the Supporting Figures that features SNP density after downsampling. The legend was added in PowerPoint. This shell script is used in conjunction with the Circos configuration which you can find [here](downsampled_circos.conf). The shell scripts that we used to perform the downsampling can be found [here](downsampling_scripts).
 
 <img src="images/Supporting_Figure_S14_circos_snp_downsampling.png" width="500">
+
+# Other scripts
+## find_zizania_specific_duplications.py
+This script filters the ```Duplications.tsv``` file created by OrthoFinder to contain _Zizania_-specific duplications. The script was written to retain only genes which were duplicated once. Genes with more than one additional copy were not retained for simplicity.
+
+## make_duplication_bed_files.py
+This script was written to take the original ```BED``` files produced by MCscan (```wild_rice.bed``` & ```latifolia.bed```) and filter them (producing new versions) to retain only duplications which were found using OrthoFinder and filtered to contain _Zizania_-specific genes using the script [find_zizania_specific_duplications.py](find_zizania_specific_duplications.py).
