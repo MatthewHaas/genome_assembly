@@ -86,7 +86,7 @@ This figure is for the tissue specificity work. Figures were combined and letter
 # Supporting Figure S7
 ## NWR relatives venn diagram
 
-<img src="images/201014_venn_diagram_with_rice_relatives_and_commas.png" width="500">
+<img src="images/venn_diagram_with_rice_relatives.png" width="500">
 
 # Supporting Figure S8
 ## dotplot.py
