@@ -36,7 +36,7 @@ This script generated the Circos plot shown in Figure 1. The figure shows the ge
 # Figure 2
 This figure shows the number of genes in common with (and private to) NWR and four other major grass species (_Oryza sativa_, _Zea mays_, _Sorghum bicolor_, and _Brachypodium distachyon_). The data come from an independent run of OrthoFinder so that the genes counts shown in the figure would only include genes shared by these species and none from the larger set of 20 species shown in the species tree.
 
-<img src="images/201014_fig2_venn_diagram_with_commas.png" width="500">
+<img src="images/venn_diagram_figure_2.png" width="500">
 
 # Figure 3
 ## karyotype.py
