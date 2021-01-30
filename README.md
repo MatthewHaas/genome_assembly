@@ -34,6 +34,10 @@ This script generated the Circos plot shown in Figure 1. The figure shows the ge
 <img src="images/Figure_1_circos_plot.png" width="500">
 
 # Figure 2
+This figure shows the phylogenetic relationship between 20 species used in the initial OrthoFinder analysis. The data to make the tree comes from OrthoFinder and the tree was created using [Dendroscope](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/software/dendroscope/). Divergence times from OrthoFinder were added manually and are in units of million years ago (MYA).
+
+<img src="images/Figure_2A_with_divergence_times.png" width="500">
+
 This figure shows the number of genes in common with (and private to) NWR and four other major grass species (_Oryza sativa_, _Zea mays_, _Sorghum bicolor_, and _Brachypodium distachyon_). The data come from an independent run of OrthoFinder so that the genes counts shown in the figure would only include genes shared by these species and none from the larger set of 20 species shown in the species tree.
 
 <img src="images/venn_diagram_figure_2.png" width="500">
