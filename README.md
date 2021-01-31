@@ -47,6 +47,7 @@ This figure shows the number of orthogroups in common with (and private to) NWR 
 <img src="images/venn_diagram_figure_2.png" width="500">
 
 # Figure 3
+## Figure 3A and Figure 3B
 ## karyotype.py
 This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/karyotype.py). I am including the script here because I modified it in order to create my plots.
 1. Line 40 was altered so that ```arg[5]``` (the name we assign to each track in the layout file) is printed in italics. 
@@ -54,6 +55,7 @@ This script was originally written by Haibao Tang and can be found [here](https:
 
 <img src="images/Figure_3A_updated.png" width="500"> <img src="images/Figure_3B_updated.png" width="500">
 
+## Figure 3C
 ## synteny.py
 This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/synteny.py). I am including the script here because I modified it in order to create my plots.
 1. Line 61 was modified so that the species label ```args[7]``` will be printed in italics. 
