@@ -101,7 +101,7 @@ We were interested in investigating the types of genes that are unique to _Z. pa
 python get_unique_NWR_genes.py NWR_unique_orthogroup_list.txt list_of_NWR_unique_genes.txt
 ```
 
-Note: the file names for ```sys.argv[1]``` and ```sys.argv[2]``` can really be anything you choose, but since ```sys.argv[1]``` is the input for the python script, it must exist. The file name for ```sys.argv[2]``` is somewhat arbitrary, but it should be meaningful.
+**Note:** the file names for ```sys.argv[1]``` and ```sys.argv[2]``` can really be anything you choose, but since ```sys.argv[1]``` is the input for the python script, it must exist. The file name for ```sys.argv[2]``` is somewhat arbitrary, but it should be meaningful.
 
 # Supporting Figure S8
 ## dotplot.py
