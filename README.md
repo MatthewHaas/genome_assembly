@@ -41,6 +41,8 @@ This figure shows the phylogenetic relationship between 20 species used in the i
 
 <img src="images/Figure_2A_with_divergence_times.png" width="500">
 
+Related to this figure, we estimated the divergence time between _Z. palustris_ and _O. sativa_. To estimate the divergence time, we used the program ```mcmctree``` from [Phylogenetic Analysis by Maximum Liklihood (PAML](http://abacus.gene.ucl.ac.uk/software/paml.html) version 4. The script to do this is [run_paml.sh](run_paml.sh)/
+
 ## Figure 2B
 This figure shows the number of orthogroups in common with (and private to) NWR and four other major grass species (_Oryza sativa_, _Zea mays_, _Sorghum bicolor_, and _Brachypodium distachyon_). The data come from an independent run of OrthoFinder so that the orthogroup counts shown in the figure would only include orthogroup shared by these species and none from the larger set of 20 species shown in the species tree. (**Note:** each orthogroup may contain one or more genes.) The native ```venn.diagram``` function from the [VennDiagram](https://cran.r-project.org/web/packages/VennDiagram/VennDiagram.pdf) package does not use a comma as a separator for the thousands place, so we modified the function and saved the script as [modified_venn_diagram.R](modified_venn_diagram.R) to force the function to use a comma separator. The script used to generate this figure is called [venn_diagram_orthogroups.R](venn_diagram_orthogroups.R). It uses the ```source()``` function to call the modified version of the ```venn.diagram``` function. You must include the [modified_venn_diagram.R](modified_venn_diagram.R) script in your working directory (or give the path to its location) in order for it to function properly.
 
