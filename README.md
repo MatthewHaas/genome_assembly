@@ -50,7 +50,7 @@ This figure shows the number of orthogroups in common with (and private to) NWR 
 
 # Figure 3
 ## Figure 3A and Figure 3B
-These figures were created using the MCscan program. **Figure 3A** was created using [run_jcvi.sh](run_jcvi.sh) while **Figure 3B** was created using [run_jcvi_with_latifolia.sh](run_jcvi_with_latifolia.sh). I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the GitHub repository for the MCscan code.
+These figures were created using the MCscan program. **Figure 3A** (left) was created using [run_jcvi.sh](run_jcvi.sh) while **Figure 3B** (right) was created using [run_jcvi_with_latifolia.sh](run_jcvi_with_latifolia.sh). I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the GitHub repository for the MCscan code.
 
 The [karyotype.py](karyotype.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/karyotype.py). I am including the script here because I modified it in order to create my plots.
 1. Line 40 was altered so that ```arg[5]``` (the name we assign to each track in the layout file) is printed in italics. 
