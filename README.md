@@ -50,20 +50,22 @@ This figure shows the number of orthogroups in common with (and private to) NWR 
 
 # Figure 3
 ## Figure 3A and Figure 3B
-## karyotype.py
-This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/karyotype.py). I am including the script here because I modified it in order to create my plots.
+These figures were created using the MCscan program. **Figure 3A** was created using [run_jcvi.sh](run_jcvi.sh) while **Figure 3B** was created using [run_jcvi_with_latifolia.sh](run_jcvi_with_latifolia.sh). I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the GitHub repository for the MCscan code.
+
+The [karyotype.py](karyotype.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/karyotype.py). I am including the script here because I modified it in order to create my plots.
 1. Line 40 was altered so that ```arg[5]``` (the name we assign to each track in the layout file) is printed in italics. 
 2. Line 239 was also changed (dividing vpad by 2 was removed) to make extra room on the margin so that _Zizania palustris_ could be fully written out (versus abbreviating it as _Z. palustris_--which also didn't fit initally--it ran into the representations of the chromosomes.
 
 <img src="images/Figure_3A_updated.png" width="500"> <img src="images/Figure_3B_updated.png" width="500">
 
 ## Figure 3C
-## synteny.py
-This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/synteny.py). I am including the script here because I modified it in order to create my plots.
+The [synteny.py](synteny.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/synteny.py). I am including the script here because I modified it in order to create my plots.
 1. Line 61 was modified so that the species label ```args[7]``` will be printed in italics. 
 2. I also added another argument ```args[8]``` so that the chromosome label will not be in italics.
 
 <img src="images/Figure_3C_updated.png" width="500">
+
+This figure shows one of the genes important for shattering called _shattering4_ (_sh4_) in _O. sativa_. _sh4_ is in the center and we opted to plot 10 genes on other side of _sh4_ in _O. sativa_ as well as its putative ortholog in _Z. palustris_. The green/blue colors indicate which strand the gene exists on.
 
 # Supporting Figure S1
 The purpose of this code was to add a scale bar to the image of tissues collected for the RNA-seq portion of the study. This work was done in a Jupyter Notebook using Python. The Jupyter Notebook file is [add_scalebar_to_annotation_photo.ipynb](add_scalebar_to_annotation_photo.ipynb). The letters were added in PowerPoint.
