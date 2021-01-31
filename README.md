@@ -96,6 +96,13 @@ Like the venn diagram in Figure 2B, we used the modified ```venn.diagram``` fuct
 
 <img src="images/venn_diagram_with_rice_relatives.png" width="500">
 
+We were interested in investigating the types of genes that are unique to _Z. palustris_ so we used the script [get_unique_NWR_genes.py](identify_unique_NWR_genes/get_unique_NWR_genes.py) to extract the gene names based on their orthogroup IDs. The orthogroup IDs were obtained by parsing the Orthogroup.GeneCount.tsv file so that we would get orthogroups for which _O. sativa_, _O. glbarrima_, _O. rufipogon_, and _Z. latifolia_ had a count of "0" while _Z. palustris_ had a count greater than "0". This resulted in 1,731 orthogroup IDs as expected from the venn diagram. Our script [get_unique_NWR_genes.py](identify_unique_NWR_genes/get_unique_NWR_genes.py) uses the text file [NWR_unique_orthogroup_list.txt](identify_unique_NWR_genes/NWR_unique_orthogroup_list.txt) containing these 1,731 orthogroup IDs (one per line) and extracts SeqIDs (using BioPython) from the orthogroup protein ```FASTA``` files located in the OrthoFinder output ```Orthogroup_Sequences``` directory. The output contains 6,624 gene names which are found in [this](identify_unique_NWR_genes/list_of_NWR_unique_genes.txt) file. There is no associated shell script to launch this python script. Instead, I just ran it on the command line. First, I loaded python 3 with the command ```module load python3```. Second, I ran the script with the following command:
+```
+python get_unique_NWR_genes.py NWR_unique_orthogroup_list.txt list_of_NWR_unique_genes.txt
+```
+
+Note: the file names for ```sys.argv[1]``` and ```sys.argv[2]``` can really be anything you choose, but since ```sys.argv[1]``` is the input for the python script, it must exist. The file name for ```sys.argv[2]``` is somewhat arbitrary, but it should be meaningful.
+
 # Supporting Figure S8
 ## dotplot.py
 This script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. The following changes were made by hard-coding my desired output into the original script: 
