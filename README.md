@@ -5,6 +5,8 @@ This repository supports the work that went into characterizing the Northern Wil
 Once the manuscript is posted to bioRxiv, that link will be available here.
 Upon publication, that link will be shared as well.
 
+There are no scripts for the genome assembly itself because that work was performed by [Dovetail Genomics](https://dovetailgenomics.com). The genome has been deposited at the United States [National Center for Biotechnology Information (NCBI)](https://www.ncbi.nlm.nih.gov/bioproject) under BioProject number PRJNA600525. The annotation work was carried out by Marissa Macchietto and Thomas Kono and those scripts can be found [here]().
+
 Please use the directory to navigate this README to find the scripts for a particular analysis or figure with ease. This README is best viewed in Light Mode.
 
 ## Directory
