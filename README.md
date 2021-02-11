@@ -130,26 +130,6 @@ This figure shows the distribution of synonymous substitution rates and ratios o
 
 <img src="images/synonymous_substitution_value_distribution.png" width="500">  <img src="images/NWR_vs_Osativa_genes_per_block.png" width="500"> <img src="images/NWR_vs_Zlatifolia_genes_per_block.png" width="500">
 
-# Supporting Figure S11
-This is the alignment figure for the putative NWR _sh4_ gene to its ortholog in _O. sativa_. The scripts used to perform the alignment are located in [alignment_scripts](alignment_scripts). Briefly, the steps for the alignment were:
-1. Identify orthologous protein sequences using OrthoFinder output
-2. Use Tom Kono's script [Backtranslate_Orthogroup_TK.py](alignment_scripts/Backtranslate_Orthogroup_TK.py) and ```CDS``` files to convert the amino acid sequence to a nucleotide sequence.
-3. Perform alignment using Clustal Omega
-
-The output of this pipeline was a text file, so the text-based alignment file was imported into PowerPoint where colors were added to make the SNPs easier to find and fonts were changed to suit personal preference.
-
-<img src="images/Supporting_Figure_S10_sh4_nucleotides_aligned_labels_updated.png" width="500">
-
-# Supporting Figure S12
-This is the alignment figure for the putative NWR _SHAT1_ gene to its ortholog in _O. sativa_. The scripts used to perform the alignment are located in [alignment_scripts](alignment_scripts). Briefly, the steps for the alignment were:
-1. Identify orthologous protein sequences using OrthoFinder output
-2. Use Tom Kono's script [Backtranslate_Orthogroup_TK.py](alignment_scripts/Backtranslate_Orthogroup_TK.py) and ```CDS``` files to convert the amino acid sequence to a nucleotide sequence.
-3. Perform alignment using Clustal Omega
-
-The output of this pipeline was a text file, so the text-based alignment file was imported into PowerPoint where colors were added to make the SNPs easier to find and fonts were changed to suit personal preference.
-
-<img src="images/Supporting_Figure_S12_SHAT1_nucleotides_aligned_labels_updated.png" width="500">
-
 # Supporting Figure S14
 ## run_downsampled_circos.sh
 This script generates the Circos plot from the Supporting Figures that features SNP density after downsampling. The legend was added in PowerPoint. This shell script is used in conjunction with the Circos configuration which you can find [here](downsampled_circos.conf). The shell scripts that we used to perform the downsampling can be found [here](downsampling_scripts).
