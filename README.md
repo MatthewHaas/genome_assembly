@@ -21,8 +21,7 @@ Please use the directory to navigate this README to find the scripts for a parti
 9. [Supporting Figure S6](#Supporting-Figure-S6)
 10. [Supporting Figure S7](#Supporting-Figure-S7)
 11. [Supporting Figure S8](#Supporting-Figure-S8)
-12. [Supporting Figure S10](#Supporting-Figure-S10)
-13. [Other scripts](#Other-scripts)
+12. [Other scripts](#Other-scripts)
 
 # Figure 1
 This script generated the [Circos](http://circos.ca) plot shown in Figure 1. The figure shows the genome-wide distribution of genes and repetitive elements. The legend was added in PowerPoint. This shell script [run_main_circos.sh](circos/run_main_circos.sh) is used in conjunction with the Circos configuration file which you can find [here](circos/repeat_specific_circos.conf).
@@ -79,6 +78,10 @@ The [karyotype.py](karyotype.py) script was originally written by Haibao Tang an
 
 <img src="images/Figure_3B_updated.png" width="500">
 
+# Figure 3
+This figure shows the distribution of synonymous substitution rates and ratios of orthologs between _Z. palustris_ and _O. sativa_; and between _Z. palustris_ and _Z. latifolia_.
+
+<img src="images/synonymous_substitution_value_distribution.png" width="500">  <img src="images/NWR_vs_Osativa_genes_per_block.png" width="500"> <img src="images/NWR_vs_Zlatifolia_genes_per_block.png" width="500">
 
 # Supporting Figure S1
 The purpose of this code was to add a scale bar to the image of tissues collected for the RNA-seq portion of the study. This work was done in a Jupyter Notebook using Python. The Jupyter Notebook file is [add_scalebar_to_annotation_photo.ipynb](add_scalebar_to_annotation_photo.ipynb). The letters were added in PowerPoint.
@@ -124,10 +127,6 @@ This figure is for the tissue specificity work. Figures were combined and letter
 
 <img src="images/copy_of_tau_density_plot.png" width="500"> <img src="images/reduced_size_copy_of_gene_specificity_barplot.png" width="500"> <img src="images/copy_of_tissue_specificity_heatmap.png" width="500">
 
-# Supporting Figure S10
-This figure shows the distribution of synonymous substitution rates and ratios of orthologs between _Z. palustris_ and _O. sativa_; and between _Z. palustris_ and _Z. latifolia_.
-
-<img src="images/synonymous_substitution_value_distribution.png" width="500">  <img src="images/NWR_vs_Osativa_genes_per_block.png" width="500"> <img src="images/NWR_vs_Zlatifolia_genes_per_block.png" width="500">
 
 # Other scripts
 ## find_zizania_specific_duplications.py
