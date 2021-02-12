@@ -25,11 +25,9 @@ Please use the directory to navigate this README to find the scripts for a parti
 13. [Supporting Figure S10](#Supporting-Figure-S10)
 14. [Supporting Figure S11](#Supporting-Figure-S11)
 15. [Supporting Figure S12](#Supporting-Figure-S12)
-17. [Supporting Figure S14](#Supporting-Figure-S14)
-18. [Other scripts](#Other-scripts)
+16. [Other scripts](#Other-scripts)
 
 # Figure 1
-## run_repeat_circos.sh
 This script generated the [Circos](http://circos.ca) plot shown in Figure 1. The figure shows the genome-wide distribution of genes and repetitive elements. The legend was added in PowerPoint. This shell script [run_main_circos.sh](circos/run_main_circos.sh) is used in conjunction with the Circos configuration file which you can find [here](circos/repeat_specific_circos.conf).
 
 <img src="images/Figure_1_circos_plot.png" width="500">
@@ -137,12 +135,6 @@ We plotted the counts per million (cpm) data from the tissue-specific expression
 This figure shows the distribution of synonymous substitution rates and ratios of orthologs between _Z. palustris_ and _O. sativa_; and between _Z. palustris_ and _Z. latifolia_.
 
 <img src="images/synonymous_substitution_value_distribution.png" width="500">  <img src="images/NWR_vs_Osativa_genes_per_block.png" width="500"> <img src="images/NWR_vs_Zlatifolia_genes_per_block.png" width="500">
-
-# Supporting Figure S14
-## run_downsampled_circos.sh
-This script generates the Circos plot from the Supporting Figures that features SNP density after downsampling. The legend was added in PowerPoint. This shell script is used in conjunction with the Circos configuration which you can find [here](downsampled_circos.conf). The shell scripts that we used to perform the downsampling can be found [here](downsampling_scripts).
-
-<img src="images/Supporting_Figure_S14_circos_snp_downsampling.png" width="500">
 
 # Other scripts
 ## find_zizania_specific_duplications.py
