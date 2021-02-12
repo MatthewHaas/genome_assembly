@@ -21,9 +21,8 @@ Please use the directory to navigate this README to find the scripts for a parti
 9. [Supporting Figure S6](#Supporting-Figure-S6)
 10. [Supporting Figure S7](#Supporting-Figure-S7)
 11. [Supporting Figure S8](#Supporting-Figure-S8)
-12. [Supporting Figure S9](#Supporting-Figure-S9)
-13. [Supporting Figure S10](#Supporting-Figure-S10)
-14. [Other scripts](#Other-scripts)
+12. [Supporting Figure S10](#Supporting-Figure-S10)
+13. [Other scripts](#Other-scripts)
 
 # Figure 1
 This script generated the [Circos](http://circos.ca) plot shown in Figure 1. The figure shows the genome-wide distribution of genes and repetitive elements. The legend was added in PowerPoint. This shell script [run_main_circos.sh](circos/run_main_circos.sh) is used in conjunction with the Circos configuration file which you can find [here](circos/repeat_specific_circos.conf).
@@ -123,11 +122,6 @@ python get_unique_NWR_genes.py NWR_unique_orthogroup_list.txt list_of_NWR_unique
 This figure is for the tissue specificity work. Figures were combined and letters added in PowerPoint to make the compound figure in the manuscript.
 
 <img src="images/copy_of_tau_density_plot.png" width="500"> <img src="images/reduced_size_copy_of_gene_specificity_barplot.png" width="500"> <img src="images/copy_of_tissue_specificity_heatmap.png" width="500">
-
-# Supporting Figure S9
-We plotted the counts per million (cpm) data from the tissue-specific expression work to generate this figure using the script [plot_putative_shattering_gene_expression.R](plot_putatitive_shattering_gene_expr.R)
-
-<img src="images/Supporting_Figure_S9_putative_shattering_gene_expr_plots.png" width="500">
 
 # Supporting Figure S10
 This figure shows the distribution of synonymous substitution rates and ratios of orthologs between _Z. palustris_ and _O. sativa_; and between _Z. palustris_ and _Z. latifolia_.
