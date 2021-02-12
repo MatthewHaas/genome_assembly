@@ -23,9 +23,7 @@ Please use the directory to navigate this README to find the scripts for a parti
 11. [Supporting Figure S8](#Supporting-Figure-S8)
 12. [Supporting Figure S9](#Supporting-Figure-S9)
 13. [Supporting Figure S10](#Supporting-Figure-S10)
-14. [Supporting Figure S11](#Supporting-Figure-S11)
-15. [Supporting Figure S12](#Supporting-Figure-S12)
-16. [Other scripts](#Other-scripts)
+14. [Other scripts](#Other-scripts)
 
 # Figure 1
 This script generated the [Circos](http://circos.ca) plot shown in Figure 1. The figure shows the genome-wide distribution of genes and repetitive elements. The legend was added in PowerPoint. This shell script [run_main_circos.sh](circos/run_main_circos.sh) is used in conjunction with the Circos configuration file which you can find [here](circos/repeat_specific_circos.conf).
