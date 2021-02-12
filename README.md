@@ -47,6 +47,15 @@ This figure shows the number of orthogroups in common with (and private to) NWR 
 
 <img src="images/venn_diagram_figure_2.png" width="500">
 
+## Figure 2C
+**Figure 2C** was created using the MCscan program ([run_jcvi.sh](run_jcvi.sh)). I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the GitHub repository for the MCscan code.
+
+The [karyotype.py](karyotype.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/karyotype.py). I am including the script here because I modified it in order to create my plots.
+1. Line 40 was altered so that ```arg[5]``` (the name we assign to each track in the layout file) is printed in italics. 
+2. Line 239 was also changed (dividing vpad by 2 was removed) to make extra room on the margin so that _Zizania palustris_ could be fully written out (versus abbreviating it as _Z. palustris_--which also didn't fit initally--it ran into the representations of the chromosomes.
+
+<img src="images/Figure_3A_updated.png" width="500">
+
 # Figure 2D
 This figure was created using the [MCscan](https://github.com/tanghaibao/jcvi/wiki/MCscan-(Python-version)#pairwise-synteny-search) program. The script that I ran on the server was [run_jcvi.sh](run_jcvi.sh). I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the [GitHub repository for the MCscan code](https://github.com/tanghaibao/jcvi/tree/main/jcvi).
 
@@ -56,15 +65,15 @@ The [dotplot.py](dotplot.py) script was originally written by Haibao Tang and ca
 3. The xlimit was slightly increased (along with the length of chr 15, scf 16, and scf 458 (in order to make the chromosome labels legible).
 
 <img src="images/wild_rice.oryza.filtered.png" width="500">
-# Figure 3
-## Figure 3A and Figure 3B
-These figures were created using the MCscan program. **Figure 3A** (left) was created using [run_jcvi.sh](run_jcvi.sh) while **Figure 3B** (right) was created using [run_jcvi_with_latifolia.sh](run_jcvi_with_latifolia.sh). I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the GitHub repository for the MCscan code.
+
+# Figure 2F
+Like **Figure 2C**, **Figure 3F** was created using the MCscan program ([run_jcvi_with_latifolia.sh](run_jcvi_with_latifolia.sh)). The script is eseentially the same, except that it compares NWR to _Z. latifolia_ rather than _O. sativa_. I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the GitHub repository for the MCscan code.
 
 The [karyotype.py](karyotype.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/karyotype.py). I am including the script here because I modified it in order to create my plots.
 1. Line 40 was altered so that ```arg[5]``` (the name we assign to each track in the layout file) is printed in italics. 
 2. Line 239 was also changed (dividing vpad by 2 was removed) to make extra room on the margin so that _Zizania palustris_ could be fully written out (versus abbreviating it as _Z. palustris_--which also didn't fit initally--it ran into the representations of the chromosomes.
 
-<img src="images/Figure_3A_updated.png" width="500"> <img src="images/Figure_3B_updated.png" width="500">
+<img src="images/Figure_3B_updated.png" width="500">
 
 ## Figure 3C
 The [synteny.py](synteny.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/synteny.py). I am including the script here because I modified it in order to create my plots.
