@@ -47,6 +47,15 @@ This figure shows the number of orthogroups in common with (and private to) NWR 
 
 <img src="images/venn_diagram_figure_2.png" width="500">
 
+# Figure 2D
+This figure was created using the [MCscan](https://github.com/tanghaibao/jcvi/wiki/MCscan-(Python-version)#pairwise-synteny-search) program. The script that I ran on the server was [run_jcvi.sh](run_jcvi.sh). I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the [GitHub repository for the MCscan code](https://github.com/tanghaibao/jcvi/tree/main/jcvi).
+
+The [dotplot.py](dotplot.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. The following changes were made by hard-coding my desired output into the original script: 
+1. The font color of the chromosome labels and positions were changed from grey to black
+2. The labels for the x and y axes were changed to _Zizania palustris_ and _Oryza sativa_ (respectively) rather than ```wild_rice``` and ```oryza``` (which are the ```BED``` file names)
+3. The xlimit was slightly increased (along with the length of chr 15, scf 16, and scf 458 (in order to make the chromosome labels legible).
+
+<img src="images/wild_rice.oryza.filtered.png" width="500">
 # Figure 3
 ## Figure 3A and Figure 3B
 These figures were created using the MCscan program. **Figure 3A** (left) was created using [run_jcvi.sh](run_jcvi.sh) while **Figure 3B** (right) was created using [run_jcvi_with_latifolia.sh](run_jcvi_with_latifolia.sh). I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the GitHub repository for the MCscan code.
@@ -109,16 +118,6 @@ python get_unique_NWR_genes.py NWR_unique_orthogroup_list.txt list_of_NWR_unique
 ```
 
 **Note:** the file names for ```sys.argv[1]``` and ```sys.argv[2]``` can really be anything you choose, but since ```sys.argv[1]``` is the input for the python script, it must exist. The file name for ```sys.argv[2]``` is somewhat arbitrary, but it should be meaningful.
-
-# Supporting Figure S8
-This figure was created using the [MCscan](https://github.com/tanghaibao/jcvi/wiki/MCscan-(Python-version)#pairwise-synteny-search) program. The script that I ran on the server was [run_jcvi.sh](run_jcvi.sh). I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the [GitHub repository for the MCscan code](https://github.com/tanghaibao/jcvi/tree/main/jcvi).
-
-The [dotplot.py](dotplot.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. The following changes were made by hard-coding my desired output into the original script: 
-1. The font color of the chromosome labels and positions were changed from grey to black
-2. The labels for the x and y axes were changed to _Zizania palustris_ and _Oryza sativa_ (respectively) rather than ```wild_rice``` and ```oryza``` (which are the ```BED``` file names)
-3. The xlimit was slightly increased (along with the length of chr 15, scf 16, and scf 458 (in order to make the chromosome labels legible).
-
-<img src="images/wild_rice.oryza.filtered.png" width="500">
 
 # Supporting Figure S9
 We plotted the counts per million (cpm) data from the tissue-specific expression work to generate this figure using the script [plot_putative_shattering_gene_expression.R](plot_putatitive_shattering_gene_expr.R)
