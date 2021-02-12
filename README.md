@@ -61,6 +61,15 @@ The [dotplot.py](dotplot.py) script was originally written by Haibao Tang and ca
 
 <img src="images/wild_rice.oryza.filtered.png" width="500">
 
+## Figure 2E
+The [synteny.py](synteny.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/synteny.py). I am including the script here because I modified it in order to create my plots.
+1. Line 61 was modified so that the species label ```args[7]``` will be printed in italics. 
+2. I also added another argument ```args[8]``` so that the chromosome label will not be in italics.
+
+<img src="images/Figure_3C_updated.png" width="500">
+
+This figure shows one of the genes important for shattering called _shattering4_ (_sh4_) in _O. sativa_. _sh4_ is in the center and we opted to plot 10 genes on other side of _sh4_ in _O. sativa_ as well as its putative ortholog in _Z. palustris_. The green/blue colors indicate which strand the gene exists on.
+
 # Figure 2F
 Like **Figure 2C**, **Figure 3F** was created using the MCscan program ([run_jcvi_with_latifolia.sh](run_jcvi_with_latifolia.sh)). The script is eseentially the same, except that it compares NWR to _Z. latifolia_ rather than _O. sativa_. I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the GitHub repository for the MCscan code.
 
@@ -70,14 +79,6 @@ The [karyotype.py](karyotype.py) script was originally written by Haibao Tang an
 
 <img src="images/Figure_3B_updated.png" width="500">
 
-## Figure 3C
-The [synteny.py](synteny.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/synteny.py). I am including the script here because I modified it in order to create my plots.
-1. Line 61 was modified so that the species label ```args[7]``` will be printed in italics. 
-2. I also added another argument ```args[8]``` so that the chromosome label will not be in italics.
-
-<img src="images/Figure_3C_updated.png" width="500">
-
-This figure shows one of the genes important for shattering called _shattering4_ (_sh4_) in _O. sativa_. _sh4_ is in the center and we opted to plot 10 genes on other side of _sh4_ in _O. sativa_ as well as its putative ortholog in _Z. palustris_. The green/blue colors indicate which strand the gene exists on.
 
 # Supporting Figure S1
 The purpose of this code was to add a scale bar to the image of tissues collected for the RNA-seq portion of the study. This work was done in a Jupyter Notebook using Python. The Jupyter Notebook file is [add_scalebar_to_annotation_photo.ipynb](add_scalebar_to_annotation_photo.ipynb). The letters were added in PowerPoint.
