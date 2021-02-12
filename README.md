@@ -89,30 +89,25 @@ The purpose of this code was to add a scale bar to the image of tissues collecte
 
 <img src="images/Supporting_Figure_S1_RNAseq_tissues_with_scalebar_and_letters.png" width="500">
 
-# Supporting Figure S2
+# Supporting Figure S3
 Plots show basic genome assembly statistics
 
 <img src="images/Nx_plot.png" width="500"> <img src="images/cumulative_plot.png" width="500">
 
-# Supporting Figure S3
+# Supporting Figure S4
 The script [WR_repeats_karyoplot.R](WR_repeats_karyoplot.R) was used to generate this figure. Y-axis labels were fixed in PowerPoint because we wanted chromosomes 1-15 to have the prefix "Chr" but scaffolds 16 and 458 to have the prefix "Scf" to avoid confusion if they were to have the "Chr" label.
 
 <img src="images/Supporting_Figure_S4_karyotypeR_chr_labels_fixed.png" width="500">
 
-# Supporting Figure S4
+# Supporting Figure S5
 This figure came from Tom & Marissa, so we need to find the script that accompanies it. The letters were added in PowerPoint.
 
 <img src="images/Supporting_Figure_S5_repetitive_element_barplots.png" width="500">
 
-# Supporting Figure S5
+# Supporting Figure S6
 This combined figure came from multiple R scripts used to parse gene ontology (GO) data and plot the most abundant GO terms. The R scripts used to generate this figure are located in the [gene_ontolgoy](gene_ontology) subdirectory. They include a modified version of the pie chart function. That script ([modified_pie_function.R](gene_ontology/modified_pie_function.R)) must be loaded when using these scripts using the ```source()``` function. You should make sure that the modified version of the script is in your working directory, otherwise it will not work properly.
 
 <img src="images/Supporting_Figure_S6_gene_ontology_plots.png" width="500">
-
-# Supporting Figure S6
-This figure is for the tissue specificity work. Figures were combined and letters added in PowerPoint to make the compound figure in the manuscript.
-
-<img src="images/copy_of_tau_density_plot.png" width="500"> <img src="images/reduced_size_copy_of_gene_specificity_barplot.png" width="500"> <img src="images/copy_of_tissue_specificity_heatmap.png" width="500">
 
 # Supporting Figure S7
 The point of this figure was to create a secondary version of the venn diagram in Figure 2B using rice relatives instead of major grass species. _O. sativa_ is the exception because, like _Z. palustris_, it is featured in both venn diagrams. _O. glaberrima_ and _O. rufipogon_ were included instead of _O. barthii_ and _O. nivara_ because those pairs of species (_O. glaberrima_ + _O. barthii_ and _O. rufipogon_ + _O. nivara_) are not too distantly related so we get the same evolutionary relationship and we wanted to avoid a more cluttered figure.
@@ -127,6 +122,11 @@ python get_unique_NWR_genes.py NWR_unique_orthogroup_list.txt list_of_NWR_unique
 ```
 
 **Note:** the file names for ```sys.argv[1]``` and ```sys.argv[2]``` can really be anything you choose, but since ```sys.argv[1]``` is the input for the python script, it must exist. The file name for ```sys.argv[2]``` is somewhat arbitrary, but it should be meaningful.
+
+# Supporting Figure S8
+This figure is for the tissue specificity work. Figures were combined and letters added in PowerPoint to make the compound figure in the manuscript.
+
+<img src="images/copy_of_tau_density_plot.png" width="500"> <img src="images/reduced_size_copy_of_gene_specificity_barplot.png" width="500"> <img src="images/copy_of_tissue_specificity_heatmap.png" width="500">
 
 # Supporting Figure S9
 We plotted the counts per million (cpm) data from the tissue-specific expression work to generate this figure using the script [plot_putative_shattering_gene_expression.R](plot_putatitive_shattering_gene_expr.R)
