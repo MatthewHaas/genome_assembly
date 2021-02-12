@@ -88,6 +88,10 @@ The purpose of this code was to add a scale bar to the image of tissues collecte
 
 <img src="images/Supporting_Figure_S1_RNAseq_tissues_with_scalebar_and_letters.png" width="500">
 
+# Supporting Figure S2
+The purpose of this code is to plot the distribution of PacBio read lengths.
+<img src="images/pacbio_length_distr.png" width="500">
+
 # Supporting Figure S3
 Plots show basic genome assembly statistics
 
