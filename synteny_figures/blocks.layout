@@ -1,0 +1,5 @@
+# x, y, rotation, ha, va, color, ratio, label, chr
+0.6, 0.6, 0, left, center, #4b0082, 1, Zizania\ palustris,  scf0458
+0.6, 0.4, 0, left, center, #ff7f00, 1, Oryza\ sativa, scf4
+# edges
+e, 0, 1
