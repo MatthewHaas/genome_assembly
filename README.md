@@ -31,7 +31,7 @@ This script generated the [Circos](http://circos.ca) plot shown in Figure 1. The
 
 # Figure 2
 ## Figure 2A
-This figure shows the phylogenetic relationship between 20 species used in the initial OrthoFinder analysis. The data to make the tree comes from OrthoFinder and the tree was created using [Dendroscope](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/software/dendroscope/). This is not a command-line program, so there is not code to share, but the file we used as input fo the program was [SpeciesTree_rooted.txt](SpeciesTree_rooted.txt). Divergence times from OrthoFinder were added manually and are in units of million years ago (MYA).
+This figure shows the phylogenetic relationship between 20 species used in the initial OrthoFinder analysis. The data to make the tree comes from OrthoFinder and the tree was created using [Dendroscope](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/software/dendroscope/). This is not a command-line program, so there is not code to share, but the file we used as input fo the program was [SpeciesTree_rooted.txt](SpeciesTree_rooted.txt). The version of the file with node labels is called [SpeciesTree_rooted_node_labels.txt](SpeciesTree_rooted_node_labels.txt). Divergence times from OrthoFinder were added manually and are in units of million years ago (MYA).
 
 <img src="images/Figure_2A_with_divergence_times.png" width="500">
 
