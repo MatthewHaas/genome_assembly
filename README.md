@@ -59,7 +59,7 @@ The [dotplot.py](dotplot.py) script was originally written by Haibao Tang and ca
 2. The labels for the x and y axes were changed to _Zizania palustris_ and _Oryza sativa_ (respectively) rather than ```wild_rice``` and ```oryza``` (which are the ```BED``` file names)
 3. The xlimit was slightly increased (along with the length of chr 15, scf 16, and scf 458 (in order to make the chromosome labels legible).
 
-<img src="images/wild_rice.oryza.filtered.png" width="500">
+<img src="images/Figure_2D.png" width="500">
 
 ## Figure 2E
 The [synteny.py](synteny.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/synteny.py). I am including the script here because I modified it in order to create my plots. The shell script that I wrote to generate the figure is called [run_micro-collinearity.sh](run_micro-collinearity.sh). The [blocks.layout](synteny_figures/blocks.layout) file should be included with [run_micro-collinearity.sh](run_micro-collinearity.sh) to work properly.
