@@ -1,4 +1,4 @@
-<h1 align="center"><strong>Whole Genome Assembly and Annotation of Northern Wild Rice (<em>Zizania palustris</em> L.), a North American Grain Reveals a Whole Genome Duplication Event within the Species</strong></h1>
+<h1 align="center"><strong>Whole Genome Assembly and Annotation of Northern Wild Rice (<em>Zizania palustris</em> L.), a North American Grain Supports a Whole Genome Duplication Event within the Species</strong></h1>
 
 This repository supports the work that went into characterizing the Northern Wild Rice (_Zizania palustris_ L.) genome.
 
