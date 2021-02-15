@@ -1,0 +1,8 @@
+14S-PS_p_S239/14S-PS_8fold.fq.gz
+FY-C20_p_S238/FY-C20_8fold.fq.gz
+GarfieldLake_p_S243/GarfieldLake_8fold.fq.gz
+Itasca-C12_p_S237/Itasca-C12_8fold.fq.gz
+Latifolia_p_S244/Latifolia_8fold.fq.gz
+NecktieLake_p_S242/NecktieLake_8fold.fq.gz
+PM3E_p_S240/PM3E_8fold.fq.gz
+UpperRiceLake_p_S241/UpperRiceLake_8fold.fq.gz
