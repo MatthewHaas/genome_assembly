@@ -108,9 +108,9 @@ Plots show basic genome assembly statistics
 The script [WR_repeats_karyoplot.R](WR_repeats_karyoplot.R) was used to generate this figure. Y-axis labels were fixed in PowerPoint because we wanted chromosomes 1-15 to have the prefix "Chr" but scaffolds 16 and 458 to have the prefix "Scf" to avoid confusion if they were to have the "Chr" label.
 
 <img src="images/karyoplotR_WR_genes_only.png" width="500">
-<img src="images/karyoplotR_WR_LTRs.pdf" width="500">
-<img src="images/karyoplotR_WR_DNA.pdf" width="500">
-<img src="images/karyoplotR_WR_LINEs.pdf" width="500">
+<img src="images/karyoplotR_WR_LTRs.png" width="500">
+<img src="images/karyoplotR_WR_DNA.png" width="500">
+<img src="images/karyoplotR_WR_LINEs.png" width="500">
 
 # Supporting Figure S5
 This figure came from Tom & Marissa, so we need to find the script that accompanies it. The letters were added in PowerPoint.
