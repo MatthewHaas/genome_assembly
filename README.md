@@ -49,7 +49,7 @@ The [karyotype.py](karyotype.py) script was originally written by Haibao Tang an
 1. Line 40 was altered so that ```arg[5]``` (the name we assign to each track in the layout file) is printed in italics. 
 2. Line 239 was also changed (dividing vpad by 2 was removed) to make extra room on the margin so that _Zizania palustris_ could be fully written out (versus abbreviating it as _Z. palustris_--which also didn't fit initally--it ran into the representations of the chromosomes.
 
-<img src="images/Figure_3A_updated.png" width="500">
+<img src="images/Figure_2C" width="500">
 
 # Figure 2D
 This figure was created using the [MCscan](https://github.com/tanghaibao/jcvi/wiki/MCscan-(Python-version)#pairwise-synteny-search) program. The script that I ran on the server was [run_jcvi.sh](run_jcvi.sh). I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the [GitHub repository for the MCscan code](https://github.com/tanghaibao/jcvi/tree/main/jcvi).
@@ -66,7 +66,7 @@ The [synteny.py](synteny.py) script was originally written by Haibao Tang and ca
 1. Line 61 was modified so that the species label ```args[7]``` will be printed in italics. 
 2. I also added another argument ```args[8]``` so that the chromosome label will not be in italics.
 
-<img src="images/Figure_3C_updated.png" width="500">
+<img src="images/Figure_2E" width="500">
 
 This figure shows one of the genes important for shattering called _shattering4_ (_sh4_) in _O. sativa_. _sh4_ is in the center and we opted to plot 10 genes on other side of _sh4_ in _O. sativa_ as well as its putative ortholog in _Z. palustris_. The green/blue colors indicate which strand the gene exists on.
 
@@ -77,7 +77,7 @@ The [karyotype.py](karyotype.py) script was originally written by Haibao Tang an
 1. Line 40 was altered so that ```arg[5]``` (the name we assign to each track in the layout file) is printed in italics. 
 2. Line 239 was also changed (dividing vpad by 2 was removed) to make extra room on the margin so that _Zizania palustris_ could be fully written out (versus abbreviating it as _Z. palustris_--which also didn't fit initally--it ran into the representations of the chromosomes.
 
-<img src="images/Figure_3B_updated.png" width="500">
+<img src="images/Figure_2F" width="500">
 
 # Figure 3
 This figure shows the distribution of synonymous substitution rates and ratios of orthologs between _Z. palustris_ and _O. sativa_; and between _Z. palustris_ and _Z. latifolia_.
