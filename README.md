@@ -149,6 +149,3 @@ The file [blast_for_shattering_genes.txt](blast_for_shattering/blast_for_shatter
 
 ## find_zizania_specific_duplications.py
 This script filters the ```Duplications.tsv``` file created by OrthoFinder to contain _Zizania_-specific duplications. The script was written to retain only genes which were duplicated once. Genes with more than one additional copy were not retained for simplicity.
-
-## make_duplication_bed_files.py
-This script was written to take the original ```BED``` files produced by MCscan (```wild_rice.bed``` & ```latifolia.bed```) and filter them (producing new versions) to retain only duplications which were found using OrthoFinder and filtered to contain _Zizania_-specific genes using the script [find_zizania_specific_duplications.py](find_zizania_specific_duplications.py).
