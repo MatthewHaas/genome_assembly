@@ -1,0 +1,134 @@
+BLASTN 2.2.28+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: zizania_palustris_13Nov2018_okGsv.fasta
+           2,183 sequences; 1,288,768,912 total letters
+
+
+
+Query= EU846982.1 Oryza sativa Japonica Group clone KCS205G10 YABBY mRNA,
+complete cds
+
+Length=975
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Scaffold_1064;HRSCAF=3428                                            134    5e-29
+  Scaffold_3;HRSCAF=502                                                117    5e-24
+
+
+> Scaffold_1064;HRSCAF=3428
+Length=111260184
+
+ Score =  134 bits (72),  Expect = 5e-29
+ Identities = 85/91 (93%), Gaps = 2/91 (2%)
+ Strand=Plus/Plus
+
+Query  102       CGGG-GCTAGAGGAATGTCGGCACAGATCGTGCCGGCGCCGGAGCATGTGTGCTACGTGC  160
+                 |||| ||| |||||||||| ||||| |||| |||||||||||||||||||||||||||||
+Sbjct  61603563  CGGGAGCT-GAGGAATGTCAGCACAAATCGCGCCGGCGCCGGAGCATGTGTGCTACGTGC  61603621
+
+Query  161       ACTGCAACTTCTGCAACACAATTTTCGCGGT  191
+                 ||||||||||||||||||||||| |||||||
+Sbjct  61603622  ACTGCAACTTCTGCAACACAATTCTCGCGGT  61603652
+
+
+ Score =  124 bits (67),  Expect = 3e-26
+ Identities = 78/83 (94%), Gaps = 1/83 (1%)
+ Strand=Plus/Plus
+
+Query  482       TTATCAAGGAAGAGATCCGGAGGATAAAAGCAAACAATCCTGACATAAGCCACAGAGAAG  541
+                 ||| || |||||| ||||||||||||||||||||||| |||||||||||||||| |||||
+Sbjct  61608081  TTA-CAGGGAAGAAATCCGGAGGATAAAAGCAAACAACCCTGACATAAGCCACAAAGAAG  61608139
+
+Query  542       CCTTCAGTACTGCAGCAAAGAAT  564
+                 |||||||||||||||||||||||
+Sbjct  61608140  CCTTCAGTACTGCAGCAAAGAAT  61608162
+
+
+ Score = 78.7 bits (42),  Expect = 3e-12
+ Identities = 44/45 (98%), Gaps = 0/45 (0%)
+ Strand=Plus/Plus
+
+Query  445       GAGAAGAGGCAGCGGGTTCCTTCAGCTTATAACAGATTTATCAAG  489
+                 ||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  61607666  GAGAAGAGGCAGCGGGTTCCTTCAGCTTATAACAGATTTATTAAG  61607710
+
+
+> Scaffold_3;HRSCAF=502
+Length=58865324
+
+ Score =  117 bits (63),  Expect = 5e-24
+ Identities = 75/81 (93%), Gaps = 0/81 (0%)
+ Strand=Plus/Plus
+
+Query  111       AGGAATGTCGGCACAGATCGTGCCGGCGCCGGAGCATGTGTGCTACGTGCACTGCAACTT  170
+                 ||||||||| ||||||||||  |||||| |||||||||||||||||||||||||||||||
+Sbjct  53532214  AGGAATGTCAGCACAGATCGCACCGGCGGCGGAGCATGTGTGCTACGTGCACTGCAACTT  53532273
+
+Query  171       CTGCAACACAATTTTCGCGGT  191
+                 ||||||||| ||| |||||||
+Sbjct  53532274  CTGCAACACGATTCTCGCGGT  53532294
+
+
+ Score =  113 bits (61),  Expect = 7e-23
+ Identities = 71/76 (93%), Gaps = 0/76 (0%)
+ Strand=Plus/Plus
+
+Query  489       GGAAGAGATCCGGAGGATAAAAGCAAACAATCCTGACATAAGCCACAGAGAAGCCTTCAG  548
+                 |||||| |||||||||||||| |||||||| || ||||||||||||||||||||||||||
+Sbjct  53539189  GGAAGAAATCCGGAGGATAAAGGCAAACAACCCCGACATAAGCCACAGAGAAGCCTTCAG  53539248
+
+Query  549       TACTGCAGCAAAGAAT  564
+                 ||| ||||||||||||
+Sbjct  53539249  TACAGCAGCAAAGAAT  53539264
+
+
+ Score =  110 bits (59),  Expect = 9e-22
+ Identities = 71/77 (92%), Gaps = 0/77 (0%)
+ Strand=Plus/Plus
+
+Query  565       TGGGCGCATTTCCCGAACATCCATTTCGGGTTAGGCTCCCATGAGAGCAGCAAGAAGCTC  624
+                 ||||| ||||| |||||||| |||||||| ||||||||| ||||||||||||||||||||
+Sbjct  53541388  TGGGCACATTTTCCGAACATTCATTTCGGATTAGGCTCCAATGAGAGCAGCAAGAAGCTC  53541447
+
+Query  625       GATGAGGCCATTGGAGC  641
+                 ||||||||||| |||||
+Sbjct  53541448  GATGAGGCCATCGGAGC  53541464
+
+
+ Score = 86.1 bits (46),  Expect = 2e-14
+ Identities = 50/52 (96%), Gaps = 0/52 (0%)
+ Strand=Plus/Plus
+
+Query  442       CCAGAGAAGAGGCAGCGGGTTCCTTCAGCTTATAACAGATTTATCAAGGAAG  493
+                 |||||||||||||||||||||||||||||||||||||||||||| ||| |||
+Sbjct  53539047  CCAGAGAAGAGGCAGCGGGTTCCTTCAGCTTATAACAGATTTATTAAGTAAG  53539098
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1219115502330
+
+
+  Database: zizania_palustris_13Nov2018_okGsv.fasta
+    Posted date:  Jul 9, 2019  4:10 PM
+  Number of letters in database: 1,288,768,912
+  Number of sequences in database:  2,183
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5
