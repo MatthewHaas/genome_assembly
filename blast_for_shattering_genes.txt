@@ -1,0 +1,50 @@
+# 26 November 2019
+# WD: /home/jkimball/haasx092/reneth_blast
+# Performing BLAST of candidate shattering genes for Reneth
+
+module load ncbi_blast+
+
+# Oryza sativa SH1
+blastn -num_threads 10 -db ~/genome_seq/zizania_palustris_genome_db -query OsSH1.fa > OsSH1_out.txt
+
+# Oryza sativa LG1
+blastn -num_threads 10 -db ~/genome_seq/zizania_palustris_genome_db -query OsLG1.fa > OsLG1_out.txt
+
+# Orzya sativa SH4
+blastn -num_threads 10 -db ~/genome_seq/zizania_palustris_genome_db -query OsSH4.fa > OsSH4_out.txt
+
+# Oryza nivara SH4
+blastn -num_threads 10 -db ~/genome_seq/zizania_palustris_genome_db -query OnSH4.fa > OnSH4_out.txt
+
+# Oryza rufipogon SH4
+blastn -num_threads 10 -db ~/genome_seq/zizania_palustris_genome_db -query OrSH4.fa > OrSH4_out.txt
+
+# Oryza sativa QSH1
+blastn -num_threads 10 -db ~/genome_seq/zizania_palustris_genome_db -query OsQSH1.fa > OsQSH1_out.txt
+
+# Oryza  sativa QSH1  (second version)
+blastn -num_threads 10 -db ~/genome_seq/zizania_palustris_genome_db -query OsQSH1_b.fa > OsQSH1_b_out.txt
+
+# Oryza rufipogon QSH1
+blastn -num_threads 10 -db ~/genome_seq/zizania_palustris_genome_db -query OrQSH1.fa > OrQSH1_out.txt
+
+# Oryza sativa WRKY transcription factor
+blastn -num_threads 10 -db ~/genome_seq/zizania_palustris_genome_db -query OsWRKY.fa > OsWRKY_out.txt
+
+# Oryza sativa SHA1
+blastn -num_threads 10 -db ~/genome_seq/zizania_palustris_genome_db -query OsSHA1.fa > OsSHA1_out.txt
+
+# Oryza glaberrima GL4
+blastn -num_threads 10 -db ~/genome_seq/zizania_palustris_genome_db -query OgGL4.fa > OgGL4_out.txt
+
+# Oryza sativa SH5
+blastn -num_threads 10 -db ~/genome_seq/zizania_palustris_genome_db -query OsSH5.fa > OsSH5_out.txt
+
+# Oryza barthii SH3
+blastn -num_threads 10 -db ~/genome_seq/zizania_palustris_genome_db -query ObSH3.fa > ObSH3_out.txt
+
+# Oryza glaberrima SH3
+blastn -num_threads 10 -db ~/genome_seq/zizania_palustris_genome_db -query OgSH3.fa > OgSH3_out.txt
+
+# Oryza sativa SH8
+blastn -num_threads 10 -db ~/genome_seq/zizania_palustris_genome_db -query OsSH8.fa > OsSH8_out.txt
