@@ -82,7 +82,7 @@ The [karyotype.py](karyotype.py) script was originally written by Haibao Tang an
 # Figure 3
 This figure shows the distribution of synonymous substitution rates and ratios of orthologs between _Z. palustris_ and _O. sativa_; and between _Z. palustris_ and _Z. latifolia_.
 
-<img src="images/synonymous_substitution_value_distribution.png" width="500">  <img src="images/NWR_vs_Osativa_genes_per_block.png" width="500"> <img src="images/NWR_vs_Zlatifolia_genes_per_block.png" width="500">
+<img src="images/NWR_vs_Osativa_genes_per_block.png" width="500"> <img src="images/NWR_vs_Zlatifolia_genes_per_block.png" width="500"> <img src="images/synonymous_substitution_value_distribution.png" width="500">
 
 # Figure 4
 This script generated the [Circos](http://circos.ca) plot shown in Figure 4. The figure shows SNP density at 2-, 4-, and 8-fold downsampling levels. The legend was added in PowerPoint. This shell script [run_downsampled_circos.sh](circos/run_downsampled_circos.sh) is used in conjunction with the Circos configuration file which you can find [here](circos/downsampled_circos.conf).
