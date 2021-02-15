@@ -118,7 +118,7 @@ This figure came from Tom & Marissa, so we need to find the script that accompan
 <img src="images/Supporting_Figure_S5_repetitive_element_barplots.png" width="500">
 
 # Supporting Figure S6
-This combined figure came from multiple R scripts used to parse gene ontology (GO) data and plot the most abundant GO terms. The R scripts used to generate this figure are located in the [gene_ontolgoy](gene_ontology) subdirectory. They include a modified version of the pie chart function. That script ([modified_pie_function.R](gene_ontology/modified_pie_function.R)) must be loaded when using these scripts using the ```source()``` function. You should make sure that the modified version of the script is in your working directory, otherwise it will not work properly.
+This combined figure came from multiple R scripts used to parse gene ontology (GO) data and plot the most abundant GO terms. The R scripts used to generate this figure are located in the [gene_ontology](gene_ontology) subdirectory. They include a modified version of the pie chart function. That script ([modified_pie_function.R](gene_ontology/modified_pie_function.R)) must be loaded when using these scripts using the ```source()``` function. You should make sure that the modified version of the script is in your working directory, otherwise it will not work properly.
 
 <img src="images/Supporting_Figure_S6_gene_ontology_plots.png" width="500">
 
