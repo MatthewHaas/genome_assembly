@@ -1,0 +1,8 @@
+14S-PS_p_S239/14S-PS_2fold.fq.gz
+FY-C20_p_S238/FY-C20_2fold.fq.gz
+GarfieldLake_p_S243/GarfieldLake_2fold.fq.gz
+Itasca-C12_p_S237/Itasca-C12_2fold.fq.gz
+Latifolia_p_S244/Latifolia_2fold.fq.gz
+NecktieLake_p_S242/NecktieLake_2fold.fq.gz
+PM3E_p_S240/PM3E_2fold.fq.gz
+UpperRiceLake_p_S241/UpperRiceLake_2fold.fq.gz
