@@ -45,7 +45,7 @@ This figure shows the number of orthogroups in common with (and private to) NWR 
 ## Figure 2C
 **Figure 2C** was created using the MCscan program ([run_jcvi.sh](run_jcvi.sh)). I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the GitHub repository for the MCscan code.
 
-The [karyotype.py](karyotype.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/karyotype.py). I am including the script here because I modified it in order to create my plots.
+The [karyotype.py](karyotype.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/blob/main/jcvi/graphics/karyotype.py). I am including the script here because I modified it in order to create my plots.
 1. Line 40 was altered so that ```arg[5]``` (the name we assign to each track in the layout file) is printed in italics. 
 2. Line 239 was also changed (dividing vpad by 2 was removed) to make extra room on the margin so that _Zizania palustris_ could be fully written out (versus abbreviating it as _Z. palustris_--which also didn't fit initally--it ran into the representations of the chromosomes.
 
