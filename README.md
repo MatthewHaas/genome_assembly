@@ -13,15 +13,16 @@ Please use the directory to navigate this README to find the scripts for a parti
 1. [Figure 1](#Figure-1)
 2. [Figure 2](#Figure-2)
 3. [Figure 3](#Figure-3)
-4. [Supporting Figure S1](#Supporting-Figure-S1)
-5. [Supporting Figure S2](#Supporting-Figure-S2)
-6. [Supporting Figure S3](#Supporting-Figure-S3)
-7. [Supporting Figure S4](#Supporting-Figure-S4)
-8. [Supporting Figure S5](#Supporting-Figure-S5)
-9. [Supporting Figure S6](#Supporting-Figure-S6)
-10. [Supporting Figure S7](#Supporting-Figure-S7)
-11. [Supporting Figure S8](#Supporting-Figure-S8)
-12. [Other scripts](#Other-scripts)
+4. [Figure 4](#Figure-4)
+5. [Supporting Figure S1](#Supporting-Figure-S1)
+6. [Supporting Figure S2](#Supporting-Figure-S2)
+7. [Supporting Figure S3](#Supporting-Figure-S3)
+8. [Supporting Figure S4](#Supporting-Figure-S4)
+9. [Supporting Figure S5](#Supporting-Figure-S5)
+10. [Supporting Figure S6](#Supporting-Figure-S6)
+11. [Supporting Figure S7](#Supporting-Figure-S7)
+12. [Supporting Figure S8](#Supporting-Figure-S8)
+13. [Other scripts](#Other-scripts)
 
 # Figure 1
 This script generated the [Circos](http://circos.ca) plot shown in Figure 1. The figure shows the genome-wide distribution of genes and repetitive elements. The legend was added in PowerPoint. This shell script [run_main_circos.sh](circos/run_main_circos.sh) is used in conjunction with the Circos configuration file which you can find [here](circos/repeat_specific_circos.conf).
@@ -82,6 +83,11 @@ The [karyotype.py](karyotype.py) script was originally written by Haibao Tang an
 This figure shows the distribution of synonymous substitution rates and ratios of orthologs between _Z. palustris_ and _O. sativa_; and between _Z. palustris_ and _Z. latifolia_.
 
 <img src="images/synonymous_substitution_value_distribution.png" width="500">  <img src="images/NWR_vs_Osativa_genes_per_block.png" width="500"> <img src="images/NWR_vs_Zlatifolia_genes_per_block.png" width="500">
+
+# Figure 4
+This script generated the [Circos](http://circos.ca) plot shown in Figure 4. The figure shows SNP density at 2-, 4-, and 8-fold downsampling levels. The legend was added in PowerPoint. This shell script [run_downsampled_circos.sh](circos/run_downsampled_circos.sh) is used in conjunction with the Circos configuration file which you can find [here](circos/downsampled_circos.conf).
+
+<img src="images/Figure_4_circos_snp_downsampling.png" width="500">
 
 # Supporting Figure S1
 The purpose of this code was to add a scale bar to the image of tissues collected for the RNA-seq portion of the study. This work was done in a Jupyter Notebook using Python. The Jupyter Notebook file is [add_scalebar_to_annotation_photo.ipynb](add_scalebar_to_annotation_photo.ipynb). The letters were added in PowerPoint.
