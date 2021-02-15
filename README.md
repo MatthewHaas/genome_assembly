@@ -137,7 +137,7 @@ python get_unique_NWR_genes.py NWR_unique_orthogroup_list.txt list_of_NWR_unique
 **Note:** the file names for ```sys.argv[1]``` and ```sys.argv[2]``` can really be anything you choose, but since ```sys.argv[1]``` is the input for the python script, it must exist. The file name for ```sys.argv[2]``` is somewhat arbitrary, but it should be meaningful.
 
 # Supporting Figure S8
-This figure is for the tissue specificity work. Figures were combined and letters added in PowerPoint to make the compound figure in the manuscript.
+This figure is for the tissue specificity work. The code to generate these figures was written by Tom Kono and can be found [here](Tissue_Specificity.R). Figures were combined and letters added in PowerPoint to make the compound figure in the manuscript.
 
 <img src="images/copy_of_tau_density_plot.png" width="500"> <img src="images/reduced_size_copy_of_gene_specificity_barplot.png" width="500"> <img src="images/copy_of_tissue_specificity_heatmap.png" width="500">
 
