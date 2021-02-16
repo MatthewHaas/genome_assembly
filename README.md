@@ -105,7 +105,7 @@ Plots show basic genome assembly statistics. There is no code for these figures.
 <img src="images/Nx_plot.png" width="500"> <img src="images/cumulative_plot.png" width="500">
 
 # Supporting Figure S4
-The script [WR_repeats_karyoplot.R](WR_repeats_karyoplot.R) was used to generate this figure. Y-axis labels were fixed in PowerPoint because we wanted chromosomes 1-15 to have the prefix "Chr" but scaffolds 16 and 458 to have the prefix "Scf" to avoid confusion if they were to have the "Chr" label.
+The script [WR_repeats_karyoplot.R](WR_repeats_karyoplot.R) was used to generate these figures.
 
 <img src="images/karyoplotR_WR_genes_only.png" width="500">
 <img src="images/karyoplotR_WR_LTRs.png" width="500">
