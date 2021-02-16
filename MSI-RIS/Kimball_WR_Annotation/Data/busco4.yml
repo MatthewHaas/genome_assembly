@@ -1,0 +1,7 @@
+name: busco4_msi
+channels:
+    - conda-forge
+    - bioconda
+    - defaults
+dependencies:
+    - busco=4.0.0
