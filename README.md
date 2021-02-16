@@ -100,7 +100,7 @@ The script [get_pacbio_seqids.sh](pacbio_read_length/get_pacbio_seqids.sh) extra
 <img src="images/pacbio_length_distr.png" width="500">
 
 # Supporting Figure S3
-Plots show basic genome assembly statistics
+Plots show basic genome assembly statistics. There is no code for these figures. They are output figures from [QUAST](http://quast.sourceforge.net) (Quality Assessment Tool for Genome Assemblies).
 
 <img src="images/Nx_plot.png" width="500"> <img src="images/cumulative_plot.png" width="500">
 
