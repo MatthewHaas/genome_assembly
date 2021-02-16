@@ -113,7 +113,7 @@ The script [WR_repeats_karyoplot.R](WR_repeats_karyoplot.R) was used to generate
 <img src="images/karyoplotR_WR_LINEs.png" width="500">
 
 # Supporting Figure S5
-This figure came from Tom & Marissa, so we need to find the script that accompanies it. The letters were added in PowerPoint.
+This figure came from Marissa & Tom. The code used to generate it can be found [here](assorted_scripts/WR_repeats_barplots.R). The letters were added in PowerPoint.
 
 <img src="images/Supporting_Figure_S5_repetitive_element_barplots.png" width="500">
 
