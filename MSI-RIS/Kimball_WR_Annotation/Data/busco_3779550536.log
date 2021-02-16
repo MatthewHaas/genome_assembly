@@ -1,0 +1,42 @@
+DEBUG:busco.ConfigManager	Getting config file
+INFO:busco.run_BUSCO	***** Start a BUSCO analysis, current time: 01/02/2020 11:30:01 *****
+DEBUG:busco.ConfigManager	Getting config file
+INFO:busco.ConfigManager	Configuring BUSCO with /home/msistaff/konox006/.conda/envs/busco4_msi/config/config.ini
+ERROR:busco.run_BUSCO	The parameter "in (--in)" was not provided. Please add it in the config file or provide it through the command line
+DEBUG:busco.run_BUSCO	The parameter "in (--in)" was not provided. Please add it in the config file or provide it through the command line
+Traceback (most recent call last):
+  File "/home/msistaff/konox006/.conda/envs/busco4_msi/lib/python3.7/configparser.py", line 788, in get
+    value = d[option]
+  File "/home/msistaff/konox006/.conda/envs/busco4_msi/lib/python3.7/collections/__init__.py", line 916, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+  File "/home/msistaff/konox006/.conda/envs/busco4_msi/lib/python3.7/collections/__init__.py", line 908, in __missing__
+    raise KeyError(key)
+KeyError: 'in'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/msistaff/konox006/.conda/envs/busco4_msi/lib/python3.7/site-packages/busco/BuscoConfig.py", line 305, in _check_mandatory_keys_exist
+    value = self.get("busco_run", param)
+  File "/home/msistaff/konox006/.conda/envs/busco4_msi/lib/python3.7/configparser.py", line 791, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'in' in section: 'busco_run'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/msistaff/konox006/.conda/envs/busco4_msi/lib/python3.7/site-packages/busco/run_BUSCO.py", line 166, in run_BUSCO
+    config_manager.load_busco_config(sys.argv)
+  File "/home/msistaff/konox006/.conda/envs/busco4_msi/lib/python3.7/site-packages/busco/BuscoLogger.py", line 55, in wrapped_func
+    self.retval = func(*args, **kwargs)
+  File "/home/msistaff/konox006/.conda/envs/busco4_msi/lib/python3.7/site-packages/busco/ConfigManager.py", line 43, in load_busco_config
+    self.config = BuscoConfigMain(self.config_file, self.params, clargs)
+  File "/home/msistaff/konox006/.conda/envs/busco4_msi/lib/python3.7/site-packages/busco/BuscoConfig.py", line 237, in __init__
+    self._check_mandatory_keys_exist()
+  File "/home/msistaff/konox006/.conda/envs/busco4_msi/lib/python3.7/site-packages/busco/BuscoLogger.py", line 51, in wrapped_func
+    self.retval = func(*args, **kwargs)
+  File "/home/msistaff/konox006/.conda/envs/busco4_msi/lib/python3.7/site-packages/busco/BuscoConfig.py", line 329, in _check_mandatory_keys_exist
+    "through the command line".format(param, param))
+SystemExit: The parameter "in (--in)" was not provided. Please add it in the config file or provide it through the command line
+ERROR:busco.run_BUSCO	BUSCO analysis failed !
+ERROR:busco.run_BUSCO	Check the logs, read the user guide, and check the BUSCO issue board on https://gitlab.com/ezlab/busco/issues
