@@ -148,6 +148,3 @@ This figure is for the tissue specificity work. The code to generate these figur
 
 ## BLAST for shattering genes
 The file [blast_for_shattering_genes.txt](blast_for_shattering/blast_for_shattering_genes.txt) contains the commands used to detect shattering genes in NWR using sequences from _Oryza_ species. These commands were carried out on the command line and not submitted to run through the scheduling system - so there is no PBS or SLURM header. The input ```FASTA``` files and BLAST output files are also located in the [blast_for_shattering](blast_for_shattering) subdirectory.
-
-## find_zizania_specific_duplications.py
-This script filters the ```Duplications.tsv``` file created by OrthoFinder to contain _Zizania_-specific duplications. The script was written to retain only genes which were duplicated once. Genes with more than one additional copy were not retained for simplicity.
