@@ -54,4 +54,5 @@ venn.diagram(x=list(Osativa_orthogroups, Zpalustris_orthogroups, Zlatifolia_orth
 			 #cat.just = list(c(0.5, 0), c(1,1), c(1,1), c(1,1), c(1,1)),
 			 cat.cex = 0.95,
 			 cat.dist = 0.35,
-			 margin = 0.30)
+			 margin = 0.30,
+	    		 euler.d = FALSE)
