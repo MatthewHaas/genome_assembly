@@ -14,7 +14,7 @@
 cd ~/pilot_GBS/200519_downsampled_8fold
 
 # Filter VCF files to keep samples with fewer than 200 genotypes missing (to make a reference panel)
-for i in $(cat vcf_list_new.txt);
+for i in $(cat vcf_list_new_8fold.txt);
 do
 STEM=$(echo ${i} | cut -f 1 -d ".")
 ~/vcftools/bin/vcftools --gzvcf  $i --max-missing 0.9 --min-alleles 2 --max-alleles 2 --remove-indels --minDP 6 --recode --recode-INFO-all --out ${STEM}_filtered
