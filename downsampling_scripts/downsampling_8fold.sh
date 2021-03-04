@@ -1,10 +1,14 @@
 #!/bin/bash -l
-#PBS -l nodes=1:ppn=8,mem=22g,walltime=24:00:00
-#PBS -m abe
-#PBS -M haasx092@umn.edu
-#PBS -e downsampling_8fold.err
-#PBS -o downsampling_8fold.out
-#PBS -N downsampling_8fold
+#SBATCH --nodes=1
+#SBATCH --ntasks=32
+#SBATCH --time=10:00:00
+#SBATCH --mem=30g
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=haasx092@umn.edu
+#SBATCH -p amdsmall
+#SBATCH --account=jkimball
+#SBATCH -o downsampling_8fold.out
+#SBATCH -e downsampling_8fold.err
 
 # This code is for downsampling fastq files (8-fold)
 

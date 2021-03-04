@@ -1,10 +1,14 @@
 #!/bin/bash -l
-#PBS -l nodes=1:ppn=8,mem=22g,walltime=24:00:00
-#PBS -m abe
-#PBS -M haasx092@umn.edu
-#PBS -e downsampling_4fold.err
-#PBS -o downsampling_4fold.out
-#PBS -N downsampling_4fold
+#SBATCH --nodes=1
+#SBATCH --ntasks=32
+#SBATCH --time=10:00:00
+#SBATCH --mem=30g
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=haasx092@umn.edu
+#SBATCH -p amdsmall
+#SBATCH --account=jkimball
+#SBATCH -o downsampling_4fold.out
+#SBATCH -e downsampling_4fold.err
 
 # This code is for downsampling fastq files (4-fold)
 
