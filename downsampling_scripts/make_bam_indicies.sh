@@ -1,10 +1,14 @@
 #!/bin/bash -l
-#PBS -l nodes=1:ppn=8,mem=15g,walltime=2:00:00
-#PBS -m abe
-#PBS -M haasx092@umn.edu
-#PBS -e make_bam_indicies.err
-#PBS -o make_bam_indicies.out
-#PBS -N make_bam_indicies
+#SBATCH --nodes=1
+#SBATCH --ntasks=32
+#SBATCH --time=4:00:00
+#SBATCH --mem=30g
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=haasx092@umn.edu
+#SBATCH -p amdsmall
+#SBATCH --account=jkimball
+#SBATCH -o index_bams.out
+#SBATCH -e index_bams.err
 
 # Purpose of this code is to index downsampled bam files prior to running scythe_mpileup script on the sorted downsampled bam files
 
