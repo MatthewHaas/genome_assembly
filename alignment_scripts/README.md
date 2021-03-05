@@ -1,6 +1,6 @@
 # README for alignment_scripts
 
-These scripts were written to align orthologous shattering genes between NWR and _O. sativa_. Initially, the results were going to be included in the Supporting Information, but were ultimately cut from the final version of the manuscript.
+These scripts were written to: 1) align orthologous shattering genes between NWR and _O. sativa_ and later 2) to align duplicated genes with _Z. palustris_ to estimate the date of the WGD. The starting files (orthogroup files) are FASTA files containing related protein sequences from [OrthoFinder](https://github.com/davidemms/OrthoFinder). Initially, the results from the shatterng gene alignments were going to be included in the Supporting Information, but were ultimately cut from the final version of the manuscript.
 
 ## Workflow
 1. [setup_orthogroup_directories.sh](setup_orthogroup_directories.sh) was used to set up the directory structure.
