@@ -8,8 +8,11 @@
 
 # This script is meant to make an aligned peptide file for 4DTV analysis
 
-cd /home/jkimball/haasx092/4DTV_latifolia
+cd /home/jkimball/haasx092/duplicated_orthogroups
 
-module load clustalo/1.2.1_gcc4.9.2_haswell
+module load clustalo/1.2.1_gcc4.9.2
 
-clustalo -i OG0000003.fa  -o clustal_omega_output.fa
+for orthogroup in $(cat first_orthogroup_block.txt);
+do
+clustalo -i $orthogroup/${orthogroup}_slim.fa -t Protein --infmt=fasta --full-iter --outfmt=fasta -o $orthogroup/${orthogroup}_slim_aligned.fa
+done
