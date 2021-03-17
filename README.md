@@ -59,7 +59,7 @@ The [dotplot.py](dotplot.py) script was originally written by Haibao Tang and ca
 <img src="images/Figure_2D.png" width="500">
 
 ## Figure 1E
-The [synteny.py](synteny.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/synteny.py). I am including the script here because I modified it in order to create my plots. The shell script that I wrote to generate the figure is called [run_micro-collinearity.sh](run_micro-collinearity.sh). The [blocks.layout](synteny_figures/blocks.layout) file should be included with [run_micro-collinearity.sh](run_micro-collinearity.sh) to work properly.
+The [synteny.py](synteny.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/blob/main/jcvi/graphics/synteny.py). I am including the script here because I modified it in order to create my plots. The shell script that I wrote to generate the figure is called [run_micro-collinearity.sh](run_micro-collinearity.sh). The [blocks.layout](synteny_figures/blocks.layout) file should be included with [run_micro-collinearity.sh](run_micro-collinearity.sh) to work properly.
 1. Line 61 was modified so that the species label ```args[7]``` will be printed in italics. 
 2. I also added another argument ```args[8]``` so that the chromosome label will not be in italics.
 
