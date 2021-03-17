@@ -2,7 +2,7 @@
 
 This repository supports the work that went into characterizing the Northern Wild Rice (_Zizania palustris_ L.) genome.
 
-Once the manuscript is posted to bioRxiv, that link will be available here.
+The manuscript was posted to bioRxiv on 12 March 2021 and can be found [here](https://www.biorxiv.org/content/10.1101/2021.03.12.435103v1).
 Upon publication, that link will be shared as well.
 
 The annotation of the NWR genome was performed by Marissa Machietto and Thomas Kono from the Minnesota Supercomputing Institute - Research Informatics Support (MSI-RIS). Those scripts are located [here](MSI-RIS/Kimball_WR_Annotation).
