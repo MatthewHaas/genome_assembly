@@ -27,25 +27,20 @@ Please use the directory to navigate this README to find the scripts for a parti
 13. [Other scripts](#Other-scripts)
 
 # Figure 1
-This script generated the [Circos](http://circos.ca) plot shown in Figure 1. The figure shows the genome-wide distribution of genes and repetitive elements. The legend was added in PowerPoint. This shell script [run_main_circos.sh](circos/run_main_circos.sh) is used in conjunction with the Circos configuration file which you can find [here](circos/repeat_specific_circos.conf).
-
-<img src="images/Figure_1_circos_plot.png" width="500">
-
-# Figure 2
-## Figure 2A
+## Figure 1A
 This figure shows the phylogenetic relationship between 20 species used in the initial OrthoFinder analysis. The data to make the tree comes from OrthoFinder and the tree was created using [Dendroscope](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/software/dendroscope/). This is not a command-line program, so there is not code to share, but the file we used as input fo the program was [SpeciesTree_rooted.txt](SpeciesTree_rooted.txt). The version of the file with node labels is called [SpeciesTree_rooted_node_labels.txt](SpeciesTree_rooted_node_labels.txt). Divergence times from OrthoFinder were added manually and are in units of million years ago (MYA).
 
 <img src="images/Figure_2A_with_divergence_times.png" width="500">
 
 Related to this figure, we estimated the divergence time between _Z. palustris_ and _O. sativa_. To estimate the divergence time, we used the program ```mcmctree``` from [Phylogenetic Analysis by Maximum Liklihood (PAML)](http://abacus.gene.ucl.ac.uk/software/paml.html) version 4. The script to do this is [run_paml.sh](run_paml.sh).
 
-## Figure 2B
+## Figure 1B
 This figure shows the number of orthogroups in common with (and private to) NWR and four other major grass species (_Oryza sativa_, _Zea mays_, _Sorghum bicolor_, and _Brachypodium distachyon_). The data come from an independent run of OrthoFinder so that the orthogroup counts shown in the figure would only include orthogroup shared by these species and none from the larger set of 20 species shown in the species tree. (**Note:** each orthogroup may contain one or more genes.) The native ```venn.diagram``` function from the [VennDiagram](https://cran.r-project.org/web/packages/VennDiagram/VennDiagram.pdf) package does not use a comma as a separator for the thousands place, so we modified the function and saved the script as [modified_venn_diagram.R](modified_venn_diagram.R) to force the function to use a comma separator. The script used to generate this figure is called [venn_diagram_orthogroups.R](venn_diagram_orthogroups.R). It uses the ```source()``` function to call the modified version of the ```venn.diagram``` function. You must include the [modified_venn_diagram.R](modified_venn_diagram.R) script in your working directory (or give the path to its location) in order for it to function properly.
 
 <img src="images/Figure_2B_venn_diagram.png" width="500">
 
-## Figure 2C
-**Figure 2C** was created using the MCscan program ([run_jcvi.sh](run_jcvi.sh)). I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the GitHub repository for the MCscan code. You should use the [seqids](synteny_figures/zp_os_seqids) and [layout](synteny_figures/zp_os_layout) files in conjuntion with [run_jcvi.sh](run_jcvi.sh), but note that you should just call them seqids and layout; and sequester them away from the other seqids and layout files used for the comparison with _Z. latifolia_. I changed the names here only so that the files would not have the same name which would overwrite the other.
+## Figure 1C
+**Figure 1C** was created using the MCscan program ([run_jcvi.sh](run_jcvi.sh)). I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the GitHub repository for the MCscan code. You should use the [seqids](synteny_figures/zp_os_seqids) and [layout](synteny_figures/zp_os_layout) files in conjuntion with [run_jcvi.sh](run_jcvi.sh), but note that you should just call them seqids and layout; and sequester them away from the other seqids and layout files used for the comparison with _Z. latifolia_. I changed the names here only so that the files would not have the same name which would overwrite the other.
 
 The [karyotype.py](karyotype.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/blob/main/jcvi/graphics/karyotype.py). I am including the script here because I modified it in order to create my plots.
 1. Line 40 was altered so that ```arg[5]``` (the name we assign to each track in the layout file) is printed in italics. 
@@ -53,7 +48,7 @@ The [karyotype.py](karyotype.py) script was originally written by Haibao Tang an
 
 <img src="images/Figure_2C.png" width="500">
 
-# Figure 2D
+# Figure 1D
 This figure was created using the [MCscan](https://github.com/tanghaibao/jcvi/wiki/MCscan-(Python-version)#pairwise-synteny-search) program. The script that I ran on the server was [run_jcvi.sh](run_jcvi.sh). I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the [GitHub repository for the MCscan code](https://github.com/tanghaibao/jcvi/tree/main/jcvi).
 
 The [dotplot.py](dotplot.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi). I am including the script here because I modified it in order to create my plots. The following changes were made by hard-coding my desired output into the original script: 
@@ -63,7 +58,7 @@ The [dotplot.py](dotplot.py) script was originally written by Haibao Tang and ca
 
 <img src="images/Figure_2D.png" width="500">
 
-## Figure 2E
+## Figure 1E
 The [synteny.py](synteny.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/synteny.py). I am including the script here because I modified it in order to create my plots. The shell script that I wrote to generate the figure is called [run_micro-collinearity.sh](run_micro-collinearity.sh). The [blocks.layout](synteny_figures/blocks.layout) file should be included with [run_micro-collinearity.sh](run_micro-collinearity.sh) to work properly.
 1. Line 61 was modified so that the species label ```args[7]``` will be printed in italics. 
 2. I also added another argument ```args[8]``` so that the chromosome label will not be in italics.
@@ -72,14 +67,19 @@ The [synteny.py](synteny.py) script was originally written by Haibao Tang and ca
 
 This figure shows one of the genes important for shattering called _shattering4_ (_sh4_) in _O. sativa_. _sh4_ is in the center and we opted to plot 10 genes on other side of _sh4_ in _O. sativa_ as well as its putative ortholog in _Z. palustris_. The green/blue colors indicate which strand the gene exists on.
 
-# Figure 2F
-Like **Figure 2C**, **Figure 3F** was created using the MCscan program ([run_jcvi_with_latifolia.sh](run_jcvi_with_latifolia.sh)). The script is eseentially the same, except that it compares NWR to _Z. latifolia_ rather than _O. sativa_. I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the GitHub repository for the MCscan code. The [layout](synteny_figures/zp_zl_layout) and [seqids](synteny_figures/zp_zl_seqids) files are used by the script and must be in the same directory as [run_jcvi_with_latifolia.sh](run_jcvi_with_latifolia.sh) to work properly. Like the case for the seqids and layout files for showing synteny between _Z. palustris_ and _O. sativa_ in Figure 2C, just call the files seqids and layout--but make sure they are kept separate.
+# Figure 1F
+Like **Figure 1C**, **Figure 1F** was created using the MCscan program ([run_jcvi_with_latifolia.sh](run_jcvi_with_latifolia.sh)). The script is eseentially the same, except that it compares NWR to _Z. latifolia_ rather than _O. sativa_. I called the program JCVI in the script name rather than MCscan because the scripts are found in a directory called jcvi in the GitHub repository for the MCscan code. The [layout](synteny_figures/zp_zl_layout) and [seqids](synteny_figures/zp_zl_seqids) files are used by the script and must be in the same directory as [run_jcvi_with_latifolia.sh](run_jcvi_with_latifolia.sh) to work properly. Like the case for the seqids and layout files for showing synteny between _Z. palustris_ and _O. sativa_ in Figure 2C, just call the files seqids and layout--but make sure they are kept separate.
 
 The [karyotype.py](karyotype.py) script was originally written by Haibao Tang and can be found [here](https://github.com/tanghaibao/jcvi/graphics/karyotype.py). I am including the script here because I modified it in order to create my plots.
 1. Line 40 was altered so that ```arg[5]``` (the name we assign to each track in the layout file) is printed in italics. 
 2. Line 239 was also changed (dividing vpad by 2 was removed) to make extra room on the margin so that _Zizania palustris_ could be fully written out (versus abbreviating it as _Z. palustris_--which also didn't fit initally--it ran into the representations of the chromosomes.
 
 <img src="images/Figure_2F.png" width="500">
+
+# Figure 2
+This script generated the [Circos](http://circos.ca) plot shown in Figure 1. The figure shows the genome-wide distribution of genes and repetitive elements. The legend was added in PowerPoint. This shell script [run_main_circos.sh](circos/run_main_circos.sh) is used in conjunction with the Circos configuration file which you can find [here](circos/repeat_specific_circos.conf).
+
+<img src="images/Figure_1_circos_plot.png" width="500">
 
 # Figure 3
 This figure shows the distribution of synonymous substitution rates and ratios of orthologs between _Z. palustris_ and _O. sativa_; and between _Z. palustris_ and _Z. latifolia_.
